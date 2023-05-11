@@ -79,6 +79,7 @@
     width: 1920px;
     height: 700px;
     background-color: none;
+    visibility: hidden;
     &_item {
         width: 1920px;
         height: 700px;
@@ -102,6 +103,11 @@
         }
     }
 }
+
+.slick-initialized {
+    visibility: visible;
+}
+
 .divide-defense {
     display: flex;
     justify-content: center;

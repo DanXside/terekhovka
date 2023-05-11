@@ -1,0 +1,92 @@
+.about-product {
+    &__banner {
+        width: 1920px;
+        height: 355px;
+        padding-top: 115px;
+        background: url(../../img/backgrounds/terekhovskiy-texture.jpg);
+        &_title {
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 128.5%;
+            text-align: left;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &_subtitle {
+            width: 890px;
+            margin-top: 40px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 136%;
+            color: #FFFFFF;
+        }
+    }
+    &__info {
+        width: 1920px;
+        height: 280px;
+        padding: 60px 100px 50px 100px ;
+        &_wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_term {
+            width: 856px;
+            height: 190px;
+            padding: 34px 36px 45px 42px;
+            border: 4px solid #46515A;
+            p {
+                width: 778px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 132%;
+                margin-top: 10px;
+                color: #30383E;
+
+            }
+        }
+        &_title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 139%;
+            margin: 0;
+            color: #30383E;
+        }
+        &_factory {
+            width: 770px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 149.5%;
+            color: #30383E;
+        }
+    }
+    &__advantages {
+        width: 1920px;
+        height: 320px;
+        margin-top: 42px;
+        padding: 47px 0 42px 0;
+        background-color: #F5F5F5;
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 212px;
+            height: 232px;
+            &-descr {
+                width: 212px;
+                height: 72px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: center;
+                color: #444F57;
+            }
+        }
+    }
+}

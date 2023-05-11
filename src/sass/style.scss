@@ -9,16 +9,18 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+width: 1920px;
+}
+
 .container {
     width: 1720px;
     margin: 0 auto;
 }
 
 @import 'blocks/promo';
-
-
-
-
+@import 'blocks/products';
+@import 'blocks/about-product';
 
 
 
