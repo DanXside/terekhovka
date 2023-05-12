@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/style.min.css">
     <script defer type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
     <script defer type="text/javascript" src="js/slick.min.js"></script>
+    <script defer type="text/javascript" src="js/jquery.inputmask.min.js"></script>
+    <script defer type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script defer type="text/javascript" src="js/index.js"></script>   
     <title>Тереховка</title>
 </head>
@@ -66,12 +68,12 @@
     </section>
 
     <div class="slider single-item">
-        <div class="slider_item">
-            <img src="img/slider/slider-1.jpg" alt="слайдер">
-        </div>
         <div class="slider_item slider_text">
             <img src="img/slider/slider-2.jpg" alt="слайдер">
             <span class="slider_text-item">Производство полного цикла — от добычи сырья на собственном карьере до доставки на Ваш объект</span>
+        </div>
+        <div class="slider_item">
+            <img src="img/slider/slider-1.jpg" alt="слайдер">
         </div>
         <div class="slider_item">
             <img src="img/slider/slider-3.jpg" alt="слайдер">
@@ -307,6 +309,58 @@
                     </div>
                 </div>
             </div>
+    </section>
+
+    <div class="request">
+        <h2 class="request__title">Оставьте он-лайн заявку</h2>
+        <form class="request__form" action="#" method="#">
+            <input class="request__form_name" type="text" name="name" placeholder="Ваше имя">
+            <input class="request__form_phone" type="text" name="phone" placeholder="+7(___)___-__-__">
+            <button class="request__form_btn">Отправить заявку</button>
+        </form>
+    </div>
+
+    <section class="news">
+        <div class="container">
+            <h2 class="news__title">Новости</h2>
+            <div class="news__wrapper">
+                <div class="news__item">
+                    <img src="img/news/pogruzka 1.jpg" alt="погрузка">
+                    <a href="#" class="news__item_title">
+                        Конкуренты пытаются подделывать продукцию Тереховского завода бетонных изделий
+                    </a>
+                    <div class="news__item_descr">
+                        Сотрудники ОАО «Тереховский ЗБИ» столкнулись с неприятной проблемой, которая известна многим предприятиям, выпускающим качественную продукцию: подделкой бренда.
+                    </div>
+                    <span class="date">27 февраля 2014 г.</span>
+                </div>
+                <div class="news__item">
+                    <img src="img/news/pogruzka 1.jpg" alt="погрузка">
+                    <a href="#" class="news__item_title">
+                        Конкуренты пытаются подделывать продукцию Тереховского завода бетонных изделий
+                    </a>
+                    <div class="news__item_descr">
+                        Сотрудники ОАО «Тереховский ЗБИ» столкнулись с неприятной проблемой, которая известна многим предприятиям, выпускающим качественную продукцию: подделкой бренда.
+                    </div>
+                    <span class="date">27 февраля 2014 г.</span>
+                </div>
+                <div class="news__item">
+                    <img src="img/news/pogruzka 1.jpg" alt="погрузка">
+                    <a href="#" class="news__item_title">
+                        Конкуренты пытаются подделывать продукцию Тереховского завода бетонных изделий
+                    </a>
+                    <div class="news__item_descr">
+                        Сотрудники ОАО «Тереховский ЗБИ» столкнулись с неприятной проблемой, которая известна многим предприятиям, выпускающим качественную продукцию: подделкой бренда.
+                    </div>
+                    <span class="date">27 февраля 2014 г.</span>
+                </div>
+            </div>
+            <div class="news__link">
+                <a href="#">
+                    Все новости
+                </a>
+            </div>
+        </div>
     </section>
 
 </body>

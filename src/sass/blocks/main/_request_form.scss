@@ -1,0 +1,69 @@
+.request {
+    width: 1920px;
+    height: 413px;
+    background: url('../../../img/backgrounds/dark-texture.jpg');
+    padding: 33px 0 43px 0;
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 128.5%;
+        margin-bottom: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 590px;
+        min-height: 225px;
+        margin: 0 auto;
+        input {
+            width: 590px;
+            height: 52px;
+            padding: 13px 33px;
+            background: none;
+            border: 1px solid #FFFFFF;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 139%;
+            color: #FFFFFF;
+            transition: 0.3s all;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 139%;
+                color: #FFFFFF;
+            }
+            &:focus {
+                outline: none;
+                border-radius: 8px;
+            }
+        }
+        &_name {
+            position: absolute;
+            top: 0;
+        }
+        &_phone {
+            margin-top: 60px;
+        }
+        &_btn {
+            width: 282px;
+            height: 67px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 142.5%;
+            margin: 0 auto;
+            margin-top: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            background: #AB231B;
+            border: none;
+            cursor: pointer;
+            border-radius: 107px;
+            color: #FFFFFF;
+        }
+    }
+}
