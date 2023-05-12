@@ -152,9 +152,7 @@
             color: #444F57;
         }
         &_subtitle {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 139%;
+            @include fw400-black;
             margin-top: 25px;
             color: #444F57;
         }

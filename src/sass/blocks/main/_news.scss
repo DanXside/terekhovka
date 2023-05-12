@@ -35,9 +35,7 @@
             color: #000000;
         }
         &_descr {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 139%;
+            @include fw400-black;
             color: #000000;
         }
     }
