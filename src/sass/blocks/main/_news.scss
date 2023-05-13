@@ -38,6 +38,9 @@
             @include fw400-black;
             color: #000000;
         }
+        &_date {
+            color: #666F7C;
+        }
     }
     &__link {
         width: 248px;
