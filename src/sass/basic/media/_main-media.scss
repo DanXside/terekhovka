@@ -1,7 +1,7 @@
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
 
     body {
-        width: 1200px;
+        width: 100%;
     }
 
     .container {
@@ -9,7 +9,7 @@
     }
 
     .promo {
-        max-width: 1200px;
+        max-width: 1440px;
         &__top-header {
             width: 1140px;
             margin: 0 auto;
@@ -26,7 +26,7 @@
             }
         }
         &__header {
-            width: 1200px;
+            width: 1440px;
             &_wrapper {
                 width: 1140px;
             }
@@ -42,42 +42,43 @@
     }
 
     .slider {
-        width: 1200px;
+        width: 1440px;
         height: 438px;
         &_item {
-            width: 1200px;
+            width: 1440px;
             height: 438px;
         }
         &_text {
             &-item {
                 font-size: 26px;
-                line-height: 100%;
-                width: 650px;
+                line-height: 129%;
+                width: 560px;
                 top: 275px;
                 left: 50px;
             }
         }
     }
     .divide-defense {
-        width: 1200px;
+        width: 1440px;
         a {
             font-size: 10px;
             line-height: 100%;
         }
     }
     .bulletin-price {
-        width: 1200px;
+        width: 1440px;
         height: 300px;
         background-size: cover;
+        padding: 59px 130px 33px 170px;
         &_left-card {
-            width: 310px;
+            width: 400px;
             height: 200px;
             &_title {
-                font-size: 24px;
+                font-size: 26px;
             }
             &_subtitle {
                 margin-top: 10px;
-                font-size: 14px;
+                font-size: 16px;
             }
             &_date {
                 margin-top: 50px;
@@ -107,7 +108,7 @@
     }
 
     .products {
-        width: 1200px;
+        width: 1440px;
         min-height: 750px;
         &__title {
             font-size: 24px;
@@ -151,9 +152,9 @@
     
     .about-product {
         &__banner {
-            width: 1200px;
-            height: 222px;
-            padding: 65px 0 0 40px;
+            width: 1440px;
+            height: 260px;
+            padding: 90px 0 0 20px;
             background-size: cover;
             &_title {
                 font-size: 30px;
@@ -165,9 +166,9 @@
             }
         }
         &__info {
-            width: 1200px;
+            width: 1440px;
             height: 210px;
-            padding: 40px 0px 35px 0px;
+            padding: 40px 0 35px 0;
             &_term {
                 width: 560px;
                 height: 134px;
@@ -186,7 +187,7 @@
             }
         }
         &__advantages {
-            width: 1200px;
+            width: 1440px;
             height: 240px;
             margin-top: 0;
             padding: 25px 0 23px 0;
@@ -207,7 +208,7 @@
     }
     
     .request {
-        width: 1200px;
+        width: 1440px;
         height: 320px;
         padding: 20px 0 25px 0;
         &__title {
@@ -237,7 +238,7 @@
     }
 
     .news {
-        width: 1200px;
+        width: 1440px;
         height: 655px;
         padding: 40px 0 35px;
         &__title {
@@ -268,7 +269,7 @@
     }
 
     .footer {
-        width: 1200px;
+        width: 1440px;
         height: 420px;
         padding: 42px 0 34px 0;
         background-size: cover;
@@ -315,6 +316,434 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
 
+    .promo {
+        width: 1200px;
+        &__top-header {
+            width: 960px;
+            &_title {
+                width: 850px;
+                h1 {
+                    font-size: 9px;
+                }
+            }
+            &_lang {
+                width: 50px;
+            }
+        }
+        &__header {
+            width: 1200px;
+            &_wrapper {
+                width: 960px;
+            }
+            &_logo {
+                width: 230px;
+                height: 43px;
+            }
+            &_menu {
+                width: 700px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .slider {
+        width: 1200px;
+        height: 365px;
+        &_item {
+            width: 1200px;
+            height: 365px;
+        }
+        &_text {
+            &-item {
+                font-size: 24px;
+                width: 500px;
+                top: 220px;
+            }
+        }
+    }
+
+    .divide-defense {
+        width: 1200px;
+    }
+
+    .bulletin-price {
+        width: 1200px;
+        &_left-card {
+            width: 360px;
+            &_title {
+                font-size: 20px;
+            }
+            &_subtitle {
+                font-size: 14px;
+                margin-top: 15px;
+                width: 300px;
+            }
+            &_date {
+                margin-top: 55px;
+                font-size: 12px;
+            }
+        }
+        &_right-card {
+            width: 460px;
+        }
+    }
+
+    .products {
+        width: 1200px;
+        padding: 20px 10px;
+        min-height: 680px;
+        &__title {
+            margin-top: 15px;
+        }
+        &__wrapper {
+            width: 960px;
+            grid-template-columns: repeat(4, 225px);
+            grid-auto-rows: 235px;
+            column-gap: 20px;
+        }
+        &__item {
+            padding: 15px 10px;
+            img {
+                width: 130px;
+                height: 130px;
+            }
+            &_title {
+                font-size: 14px;
+            }
+            &_subtitle {
+                font-size: 10px;
+                width: 200px;
+            }
+        }
+        &__link {
+            margin-top: 20px;
+        }
+    }
+    .about-product {
+        &__banner {
+            width: 1200px;
+            height: 217px;
+            padding: 60px 0 0 20px;
+            &_title {
+                font-size: 26px;
+            }
+            &_subtitle {
+                width: 540px;
+                font-size: 14px;
+            }
+        }
+        &__info {
+            width: 1200px;
+            height: 165px;
+            padding: 20px 0 15px 0;
+            &_term {
+                width: 480px;
+                height: 120px;
+                padding: 15px 16px 18px 17px;
+                p {
+                    width: 440px;
+                    font-size: 10px;
+                    margin-bottom: 0;
+                }
+            }
+            &_title {
+                font-size: 16px;
+            }
+            &_factory {
+                width: 460px;
+                font-size: 14px;
+            }
+        }
+        &__advantages {
+            width: 1200px;
+            height: 200px;
+            &_item {
+                width: 150px;
+                height: 165px;
+                &-descr {
+                    width: 140px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .request {
+        width: 1200px;
+        height: 280px;
+        &__title {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        &__form {
+            width: 320px;
+            min-height: 160px;
+            input {
+                width: 320px;
+                height: 32px;
+                font-size: 10px;
+                padding: 13px 25px;
+                &::placeholder {
+                    font-size: 10px;
+                }
+            }
+            &_phone {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .news {
+        width: 1200px;
+        padding: 30px 25px;
+        height: 570px;
+        &__title {
+            font-size: 24px;
+        }
+        &__wrapper {
+            width: 960px;
+            margin-top: 30px;
+        }
+        &__item {
+            width: 300px;
+            height: 370px;
+        }
+    }
+
+    .footer {
+        width: 1200px;
+        height: 380px;
+        padding: 30px 0 23px 0;
+        &__item-contacts {
+            width: 320px;
+        }
+        &__contacts {
+            width: 320px;
+            font-size: 8px;
+        }
+        &__item-menu {
+            width: 170px;
+            min-height: 320px;
+        }
+        &__menu {
+            min-height: 320px;
+            a {
+                font-size: 10px;
+            }
+        }
+        &__item-adds {
+            width: 370px;
+        }
+        &__adds {
+            a {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+    .promo {
+        width: 992px;
+        &__top-header {
+            width: 720px;
+            &_title {
+                width: 630px;
+            }
+        }
+        &__header {
+            width: 992px;
+            &_wrapper {
+                width: 720px;
+            }
+            &_logo {
+                margin: 0 auto;
+            }
+            &_menu {
+                display: none;
+            }
+        }
+    }
+
+    .slider {
+        width: 992px;
+        height: 302px;
+        &_item {
+            width: 992px;
+            height: 302px;
+        }
+        &_text {
+            &-item {
+                font-size: 20px;
+                width: 420px;
+                top: 180px;
+            }
+        }
+    }
+
+    .divide-defense {
+        width: 992px;
+        height: 34px;
+        a {
+            font-size: 10px;
+        }
+    }
+    
+    .bulletin-price {
+        flex-direction: column;
+        width: 992px;
+        height: 480px;
+        &_left-card {
+            width: 440px;
+            height: 150px;
+            &_title {
+                font-size: 22px;
+                text-align: center;
+            }
+            &_subtitle {
+                font-size: 16px;
+                margin: 0 auto;
+                margin-top: 15px;
+                width: 400px;
+                text-align: center;
+            }
+            &_date {
+                width: 150px;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+        }
+        &_right-card {
+            width: 530px;
+            height: 250px;
+            &_item {
+                &_key {
+                    font-size: 12px;
+                }
+                &_descr {
+                    font-size: 12px;
+                }
+            }
+            &_bottom-links {
+                margin-top: 15px;
+            }
+            
+        }
+    }
+
+    .products {
+        width: 992px;
+        &__title {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        &__descr {
+            font-size: 10px;
+            margin-top: 10px;
+        }
+        &__wrapper {
+            width: 720px;
+            grid-template-columns: repeat(3, 225px);
+            row-gap: 15px;
+        }
+    }
+
+    .about-product {
+        &__banner {
+            width: 992px;
+            height: 179px;
+            padding: 40px 0 0 0px;
+            &_title {
+                font-size: 28px;
+                text-align: center;
+            }
+            &_subtitle {
+                width: 600px;
+                margin: 0 auto;
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+        &__info {
+            width: 992px;
+            height: 340px;
+            &_wrap {
+                flex-direction: column;
+                height: 280px;
+            }
+            &_term {
+                width: 650px;
+                height: 140px;
+                p {
+                    width: 620px;
+                    font-size: 14px;
+                }
+            }
+            &_title {
+                font-size: 20px;
+            }
+            &_factory {
+                width: 650px;
+                font-size: 19px;
+            }
+        }
+        &__advantages {
+            width: 992px;
+            height: 400px;
+            &_wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 150px);
+                grid-auto-rows: 165px;
+                column-gap: 20px;
+                row-gap: 20px;
+            }
+        }
+    }
+
+    .request {
+        width: 992px;
+    }
+
+    .news {
+        width: 992px;
+        height: 460px;
+        &__title {
+            margin-top: 0;
+        }
+        &__wrapper {
+            width: 720px;
+        }
+        &__item {
+            width: 230px;
+            height: 300px;
+        }
+        &__link {
+            margin-top: 20px;
+        }
+    }
+
+    .footer {
+        width: 992px;
+        &__item-contacts, &__contacts {
+            width: 300px;
+        }
+        &__item-menu {
+            width: 170px;
+            min-height: 323px;
+        }
+        &__menu {
+            padding: 0;
+            min-height: 323px;
+        }
+    }
 }
