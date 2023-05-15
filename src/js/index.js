@@ -30,3 +30,21 @@ $(document).ready(function(){
         return;
     });
 });
+
+const hamburger = document.querySelector('.hamburger-menu'),
+      menu = document.querySelector('.promo__header_menu'),
+      links = document.querySelectorAll('.promo__header_menu-link');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+});
+
+links.forEach ((e) => {
+    e.addEventListener('click', () => {
+        menu.classList.remove('active');
+        hamburger.classList.remove('active');
+    });
+});
+
+

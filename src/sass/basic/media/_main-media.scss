@@ -563,14 +563,71 @@
         &__header {
             width: 992px;
             &_wrapper {
+                position: relative;
                 width: 720px;
             }
             &_logo {
                 margin: 0 auto;
             }
             &_menu {
+                position: fixed;
+                right: -100%;
+                transition: 0.4s all;
+                &.active {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 170px;
+                    height: 240px;
+                    padding: 0;
+                    top: -5px;
+                    left: 545px;
+                    background-color: $main-color;
+                    transition: 0.4s all;
+                    z-index: 10;
+                }
+                a {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .hamburger-menu {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 20px;
+        top: 14px;
+        left: 690px;
+        cursor: pointer;
+        z-index: 12;
+        transition: 0.5s all;
+        &.active {
+            .hamburger-menu_span-1 {
+                transform: translateY(7px) rotate(60deg);
+            }
+            .hamburger-menu_span-2 {
                 display: none;
             }
+            .hamburger-menu_span-3 {
+                transform: translateY(-7px)  rotate(-60deg);
+            }
+        }
+        span {
+            position: inherit;
+            display: block;
+            width: 30px;
+            height: 2px;
+            transition: 0.5s all;
+            background-color: #444F57; 
+        }
+        &_span-2 {
+            margin-top: 7px;
+        }
+        &_span-3 {
+            margin-top: 14px;
         }
     }
 
@@ -747,3 +804,4 @@
         }
     }
 }
+
