@@ -1,4 +1,5 @@
 .footer {
+    position: relative;
     width: 1920px;
     height: 534px;
     background: url('../../../img/backgrounds/footer-texture.jpg');
@@ -63,5 +64,10 @@
             text-transform: uppercase;
             color: #FFFFFF;
         }
+    }
+    &__live-internet {
+        position: absolute;
+        top: 460px;
+        right: 100px;
     }
 }

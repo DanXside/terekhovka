@@ -7,6 +7,15 @@ $(document).ready(function(){
         speed: 700
     });
 
+    $('.adv-slider').slick({
+        infinite: true,
+        arrows: false,
+        autoplay:true,
+        dots: false,
+        speed: 700,
+        slidesToShow: 3
+    })
+
     $('.request__form_phone').inputmask("+7(999)999-99-99");
     jQuery.validator.addMethod("checkMaskPhone", function (value, el) {
         return /\+7\(\d{3}\)\d{3}-\d{2}-\d{2}/g.test(value);
@@ -33,7 +42,8 @@ $(document).ready(function(){
 
 const hamburger = document.querySelector('.hamburger-menu'),
       menu = document.querySelector('.promo__header_menu'),
-      links = document.querySelectorAll('.promo__header_menu-link');
+      links = document.querySelectorAll('.promo__header_menu-link'),
+      advantages = document.querySelector('.about-product__advantages_wrapper');
 
 hamburger.addEventListener('click', () => {
     menu.classList.toggle('active');
@@ -47,4 +57,8 @@ links.forEach ((e) => {
     });
 });
 
-
+if (window.screen.width <= 575) {
+    advantages.classList.add('adv-slider');
+} else {
+    advantages.classList.remove('adv-slider');
+}
