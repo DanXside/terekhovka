@@ -35,6 +35,18 @@
         align-items: center;
         padding: 40px 20px 35px 20px;
         border: 1px solid #666F7C;
+        transition: 0.4s all;
+        &:hover {
+            border-radius: 5px;
+            box-shadow: 8px 8px 24px 5px rgba(24, 31, 36, 0.2);
+        }
+        a {
+            text-decoration: none;
+            transition: 0.4s all;
+            &:hover {
+                color: #423838;
+            }
+        }
         img {
             width: 240px;
             height: 240px;
