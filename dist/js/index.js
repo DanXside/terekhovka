@@ -62,3 +62,10 @@ if (window.screen.width <= 320) {
 } else {
     advantages.classList.remove('adv-slider');
 }
+
+if (window.devicePixelRatio !== 1) { // Костыль для определения иных устройств, с коэффициентом отличным от 1		
+  const dpt = window.devicePixelRatio;
+  const widthM = window.screen.width * dpt;
+  const widthH = window.screen.height * dpt;
+  document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">');
+}
