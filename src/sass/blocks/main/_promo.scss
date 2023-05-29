@@ -1,11 +1,10 @@
 .promo {
-    width: 1920px;
     background-color: $main-color;
     &__top-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 1614px;
+        max-width: 1614px;
         height: 33px;
         margin-left: 106px;       
         &_title {
@@ -33,14 +32,13 @@
         }
     }
     &__header {
-        width: 1920px;
         background-color: #FFFFFF;
         padding: 33px 0 34px 0;
         &_wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 1720px;
+            max-width: 1720px;
             margin: 0 auto;
         }
         &_logo {
@@ -80,7 +78,6 @@
 }
 
 .slider {
-    width: 1920px;
     height: 700px;
     background-color: none;
     visibility: hidden;
@@ -116,7 +113,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1920px;
     height: 52px;
     background-color: $main-color;
     a {
@@ -137,7 +133,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1920px;
     height: 350px;
     background: url('../img/backgrounds/bright-texture.jpg');
     padding: 59px 71px 33px 151px;

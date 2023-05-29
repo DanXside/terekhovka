@@ -1,9 +1,10 @@
 .about-product {
     &__banner {
-        width: 1920px;
         height: 355px;
         padding-top: 115px;
         background: url(../img/backgrounds/terekhovskiy-texture.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
         &_title {
             font-weight: 700;
             font-size: 45px;
@@ -23,7 +24,6 @@
         }
     }
     &__info {
-        width: 1920px;
         height: 280px;
         padding: 60px 100px 50px 100px ;
         &_wrap {
@@ -62,7 +62,6 @@
         }
     }
     &__advantages {
-        width: 1920px;
         height: 320px;
         margin-top: 42px;
         padding: 47px 0 42px 0;
