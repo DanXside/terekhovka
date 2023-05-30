@@ -57,7 +57,7 @@ links.forEach ((e) => {
     });
 });
 
-if (window.screen.width <= 575) {
+if (window.screen.width <= 720) {
     advantages.classList.add('adv-slider');
 } else {
     advantages.classList.remove('adv-slider');
