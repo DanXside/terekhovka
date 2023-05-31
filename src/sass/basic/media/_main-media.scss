@@ -1,8 +1,8 @@
-@media (min-width: 1921px) {
+@media (min-width: 1921px) and (max-width: 2560px) {
     .slider {
         &_text {
             &-item {
-                left: 110px;
+                left: 17%;
             }
         }
     }
@@ -13,6 +13,26 @@
         }
         &_right-card {
             margin-left: 350px;
+        }
+    }
+
+    .about-product {
+        &__banner {
+            &_title {
+                text-align: center;
+            }
+            &_subtitle {
+                max-width: 920px;
+                margin: 0 auto;
+                margin-top: 40px;
+                text-align: center;
+            }
+        }
+    }
+
+    .footer {
+        &__live-internet {
+            left: 75%;
         }
     }
 }
@@ -297,7 +317,7 @@
         }
         &__item-menu {
             width: 200px;
-            height: 330px;
+            min-height: 330px;
         }
         &__menu {
             min-height: 330px;
@@ -812,6 +832,60 @@
                     font-size: 14px;
                 }
             }
+        }
+    }
+
+    .news {
+        min-height: 2150px;
+        &__wrapper {
+            flex-direction: column;
+            max-width: 650px;
+            min-height: 1900px;
+        }
+        &__item {
+            max-width: 650px;
+            min-width: 550px;
+            min-height: 600px;
+            &:last-child {
+                display: flex;
+            }
+        }
+    }
+
+    .footer {
+        position: relative;
+        min-height: 600px;
+        &__wrapper {
+            margin-top: 100px;
+        }
+        &__item-contacts {
+            position: absolute;
+            top: 7%;
+            left: 30%;
+        }
+        &__contacts {
+            position: absolute;
+            top: 75%;
+            left: -11%;
+            text-align: center;
+        }
+        &__item-menu {
+            width: 200px;
+            margin-left: 40px;
+        }
+        &__menu {
+            width: 200px;
+        }
+        &__item-adds {
+            margin-left: 100px;
+        }
+        &__adds {
+            &:not(:last-child) {
+                margin-bottom: 38px;
+            }
+        }
+        &__live-internet {
+            display: none;
         }
     }
 }
