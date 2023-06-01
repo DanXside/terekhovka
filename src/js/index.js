@@ -15,13 +15,22 @@ $(document).ready(function(){
         speed: 700,
         slidesToShow: 3,
         mobileFirst: true,
-        responsive: [{
-                breakpoint: 321,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 0,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
-            }]
+            }
+        ]
     });
 
     $('.request__form_phone').inputmask("+7(999)999-99-99");

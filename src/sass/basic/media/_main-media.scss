@@ -243,7 +243,7 @@
             margin-bottom: 35px;
         }
         &__form {
-            width: 500px;
+            max-width: 500px;
             min-height: 180px;
             input {
                 width: 500px;
@@ -327,7 +327,7 @@
             }
         }
         &__item-adds {
-            width: 420px;
+            max-width: 420px;
             height: 330px;
         }
         &__adds {
@@ -408,7 +408,7 @@
             min-height: 300px;
         }
         &__item-adds {
-            width: 400px;
+            max-width: 400px;
         }
     }
 }
@@ -902,7 +902,7 @@
 
 @media screen and (max-width: 576px) {
     .container {
-        width: 520px;
+        max-width: 520px;
     }
 
     .promo {
@@ -945,7 +945,7 @@
     }
 
     .bulletin-price {
-        height: 420px;
+        height: 480px;
         padding: 40px 20px 30px 20px;
         &_left-card {
             min-width: 320px;
@@ -956,7 +956,7 @@
                 font-size: 14px;
             }
             &_date {
-                top: 300px;
+                top: 360px;
                 font-size: 14px;
             }
         }
@@ -977,8 +977,8 @@
             }
             &_bottom-links {
                 width: 180px;
-                top: 330px;
-                left: 60%;
+                top: 390px;
+                left: 50%;
                 a {
                     font-size: 14px;
                 }
@@ -987,17 +987,26 @@
     }
     
     .products {
+        display: flex;
+        justify-content: center;
         &__title {
+            width: 400px;
             font-size: 25px;
         }
         &__descr {
+            width: 400px;
             min-width: 320px;
+            margin-left: 0;
+            margin-right: 0;
         }
         &__wrapper {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            width: 400px;
+            margin-left: 0;
+            margin-right: 0;
             min-width: 320px;
             min-height: 900px;
             padding: 0;
@@ -1024,22 +1033,34 @@
             background-size: cover;
             background-repeat: no-repeat;
             &_title {
-                font-size: 25px;
+                font-size: 22px;
             }
             &_subtitle {
-                font-size: 16px;
+                min-width: 400px;
+                font-size: 14px;
             }
         }
         &__info {
             height: 430px;
+            padding: 20px 10px;
+            &_wrap {
+                max-width: 520px;
+                min-width: 400px;
+            }
+            &_term {
+                padding: 15px 20px 10px 20px;
+                min-width: 400px;
+                p {
+                    min-width: 360px;
+                }
+            }
             &_factory {
+                min-width: 400px;
+                margin-top: 30px;
                 font-size: 20px;
             }
         }
         &__advantages {
-            .slick-slide {
-                height: 180px;
-            }
             &_item {
                 height: 200px;
                 &-descr {
@@ -1050,13 +1071,35 @@
         }
     }
 
+    .request {
+        &__form {
+            max-width: 520px;
+            min-width: 400px;
+            input {
+                width: 100%;
+            }
+        }
+    }
+
     .news {
+        &__wrapper {
+            max-width: 520px;
+            min-width: 400px;
+        }
         &__item {
+            max-width: 520px;
+            min-width: 400px;
             align-items: center;
+            img {
+                max-width: 520px;
+                min-width: 400px;
+            }
             &_title {
                 text-align: center;
             }
             &_descr {
+                max-width: 520px;
+                min-width: 400px;
                 text-align: center;
             }
         }
@@ -1081,6 +1124,8 @@
         }
         &__item-adds {
             position: absolute;
+            max-width: 180px;
+            min-width: 180px;
             width: 270px;
             top: 140px;
             left: 30%;
@@ -1088,7 +1133,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     .container {
         max-width: 290px;
     }
@@ -1104,6 +1149,7 @@
                 }
             }
             &_lang {
+                width: 35px;
                 height: 65px;
             }
         }
@@ -1208,13 +1254,16 @@
     .products {
         padding: 20px 10px;
         &__title {
+            max-width: 290px;
             font-size: 18px;
         }
         &__descr {
+            max-width: 290px;
             min-width: 290px;
             font-size: 12px;
         }
         &__wrapper {
+            max-width: 290px;
             min-width: 290px;
             min-height: 360px;
         }
@@ -1302,6 +1351,7 @@
         }
         &__form {
             width: 290px;
+            min-width: 290px;
             input {
                 width: 290px;
                 height: 42px;
