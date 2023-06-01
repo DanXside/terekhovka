@@ -13,8 +13,16 @@ $(document).ready(function(){
         autoplay:true,
         dots: false,
         speed: 700,
-        slidesToShow: 3
-    })
+        slidesToShow: 3,
+        mobileFirst: true,
+        responsive: [{
+                breakpoint: 321,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+    });
 
     $('.request__form_phone').inputmask("+7(999)999-99-99");
     jQuery.validator.addMethod("checkMaskPhone", function (value, el) {
