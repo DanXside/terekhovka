@@ -1374,6 +1374,7 @@
             font-size: 25px;
         }
         &__wrapper {
+            max-width: 290px;
             min-width: 290px;
             min-height: 1140px;
         }
@@ -1383,13 +1384,16 @@
             min-height: 280px;
             height: 360px;
             img {
-                width: 290px;
+                max-width: 290px;
+                min-width: 200px;
                 height: 220px;
             }
             &_title {
                 font-size: 18px;
             }
             &_descr {
+                max-width: 290px;
+                min-width: 200px;
                 font-size: 12px;
             }
             &_date {
