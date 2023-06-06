@@ -1,5 +1,9 @@
 $(document).ready(function(){
-    $('.single-item').slick({
+    const $mainSl = $('.single-item'),
+          $advSl = $('.adv-slider'),
+          $aboutSl = $('.location-slider');
+
+    $mainSl.slick({
         infinite: true,
         arrows: false,
         autoplay: true,
@@ -7,7 +11,7 @@ $(document).ready(function(){
         speed: 700
     });
 
-    $('.adv-slider').slick({
+    $advSl.slick({
         infinite: true,
         arrows: false,
         autoplay:true,
@@ -31,6 +35,15 @@ $(document).ready(function(){
                 }
             }
         ]
+    });
+
+    $aboutSl.slick({
+        infinite: true,
+        arrows: false,
+        autoplay:true,
+        dots: true,
+        speed: 700,
+        slidesToShow: 1
     });
 
     $('.request__form_phone').inputmask("+7(999)999-99-99");
@@ -77,5 +90,7 @@ links.forEach ((e) => {
 if (window.screen.width <= 720) {
     advantages.classList.add('adv-slider');
 } else {
-    advantages.classList.remove('adv-slider');
+    if (window.location.pathname === '/') {
+        advantages.classList.remove('adv-slider');
+    }
 }

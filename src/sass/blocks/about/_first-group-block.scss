@@ -1,0 +1,72 @@
+.first-group {
+    &__main-title {
+        background: url('../img/about/backgrounds/dark-texture.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 80px;
+        height: 200px;
+        text-align: center;
+        h1 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 128.5%;
+            margin: 0;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+    &__location {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        &_slider {
+            max-width: 930px;
+            max-height: 555px;
+            .slick-dots {
+                top: 92%;
+            }
+            .slick-dots li button {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: #FFFFFF;
+            }
+            li.slick-active button {
+                background: #C71D14;
+            }
+        }
+        &_descr {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            max-width: 710px;
+            max-height: 400px;
+            p {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 151%;
+                margin-top: 50px;
+                color: #30383E;
+
+            }
+            &-title {
+                display: flex;
+                justify-content: start;
+                align-items: end;
+                h2 {
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 114%;
+                    color: #30383E;
+                    margin: 0;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+    
+    
+}
+
