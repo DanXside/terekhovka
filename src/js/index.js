@@ -1,5 +1,10 @@
 $(document).ready(function(){
-    $('.single-item').slick({
+    const $mainSl = $('.single-item'),
+          $advSl = $('.adv-slider'),
+          $aboutSl = $('.location-slider'),
+          $overlaySl = $('.overlay-slider');
+
+    $mainSl.slick({
         infinite: true,
         arrows: false,
         autoplay: true,
@@ -7,7 +12,7 @@ $(document).ready(function(){
         speed: 700
     });
 
-    $('.adv-slider').slick({
+    $advSl.slick({
         infinite: true,
         arrows: false,
         autoplay:true,
@@ -33,6 +38,41 @@ $(document).ready(function(){
         ]
     });
 
+    $aboutSl.slick({
+        infinite: true,
+        arrows: false,
+        autoplay:true,
+        dots: true,
+        speed: 700,
+        slidesToShow: 1,
+        fade: true
+    });
+   
+    $('.first-group__location_slide').on('click', function () {
+        $('.overlay').fadeIn(500);
+        $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
+            infinite: true,
+            arrows: true,
+            autoplay: false,
+            dots: true,
+            speed: 700,
+            slidesToShow: 1,
+            fade: false
+        });
+    });
+
+ 
+    $('.overlay').on('click', function (e) {
+        if ($(e.target).closest('.overlay-slider').length) {
+            return;
+        };
+        $('.overlay').fadeOut(500);
+    }); 
+
+    // sliders and other main
+
+    // form
+
     $('.request__form_phone').inputmask("+7(999)999-99-99");
     jQuery.validator.addMethod("checkMaskPhone", function (value, el) {
         return /\+7\(\d{3}\)\d{3}-\d{2}-\d{2}/g.test(value);
@@ -57,6 +97,10 @@ $(document).ready(function(){
     });
 });
 
+    // form
+
+    //menu
+
 const hamburger = document.querySelector('.hamburger-menu'),
       menu = document.querySelector('.promo__header_menu'),
       links = document.querySelectorAll('.promo__header_menu-link'),
@@ -77,5 +121,9 @@ links.forEach ((e) => {
 if (window.screen.width <= 720) {
     advantages.classList.add('adv-slider');
 } else {
-    advantages.classList.remove('adv-slider');
+    if (window.location.pathname === '/') {
+        advantages.classList.remove('adv-slider');
+    }
 }
+
+    //menu

@@ -1,4 +1,6 @@
 .first-group {
+    position: relative;
+    z-index: 4;
     &__main-title {
         background: url('../img/about/backgrounds/dark-texture.jpg');
         background-size: cover;
@@ -16,39 +18,14 @@
         }
     }
     &__location {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 40px;
+        @include block-slide-wrap;
         &_slider {
-            max-width: 930px;
-            max-height: 555px;
-            .slick-dots {
-                top: 92%;
-            }
-            .slick-dots li button {
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                background: #FFFFFF;
-            }
-            li.slick-active button {
-                background: #C71D14;
-            }
+            @include slider;
         }
         &_descr {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: start;
-            max-width: 710px;
-            max-height: 400px;
+            @include slide-descr-start;
             p {
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 151%;
-                margin-top: 50px;
-                color: #30383E;
+                @include slide-descr-p;
 
             }
             &-title {
@@ -56,17 +33,84 @@
                 justify-content: start;
                 align-items: end;
                 h2 {
-                    font-weight: 700;
-                    font-size: 35px;
-                    line-height: 114%;
-                    color: #30383E;
-                    margin: 0;
-                    margin-left: 30px;
+                    @include  slide-descr-h2;
                 }
             }
         }
     }
+    &__andezit {
+        @include block-slide-wrap;
+        &_descr {
+            @include slide-descr-end;
+            margin-bottom: 80px;
+            p {
+                @include slide-descr-p;
+            }
+            &-title {
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                padding-right: 20px;
+                h2 {
+                    @include slide-descr-h2;
+                }
+            }
+        }
+        &_slider {
+            @include slider;
+        }
+    }
     
-    
+}
+
+.overlay, .overlay-2 {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: rgb(203, 203, 203), $alpha: 0.9);
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 10;
+
+    &-slider {
+        max-width: 1000px;
+        height: 597px;
+        margin: 0 auto;
+        margin-top: 60px;
+        opacity: 1;
+        img {
+            width: 100%;
+            height: 597px;
+        }
+    }
+    .slick-dots {
+        top: 98%;
+    }
+    .slick-prev {
+        left: -45px;
+        &:before {
+            font-size: 40px;
+        }
+    }
+    .slick-next {
+        &:before {
+            font-size: 40px;
+        }
+    }
+}
+
+.slick-dots {
+    top: 92%;
+}
+.slick-dots li button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+li.slick-active button {
+    background: #C71D14;
 }
 

@@ -1,5 +1,62 @@
+// MAIN-PAGE
+
 @mixin fw400-black {
     font-weight: 400;
     font-size: 18px;
     line-height: 139%;
 }
+
+// MAIN-PAGE
+
+// ABOUT-PAGE
+
+@mixin slide-descr-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 710px;
+    max-height: 400px;
+}
+
+@mixin slide-descr-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    max-width: 710px;
+    max-height: 400px;
+}
+
+@mixin slide-descr-p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 151%;
+    margin-top: 50px;
+    color: #30383E;
+}
+
+@mixin slide-descr-h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 114%;
+    color: #30383E;
+    margin: 0;
+    margin-left: 30px;
+}
+
+@mixin block-slide-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+@mixin slider {
+    max-width: 930px;
+    max-height: 555px;
+}
+
+
+
+// ABOUT-PAGE

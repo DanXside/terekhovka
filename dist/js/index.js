@@ -1,7 +1,8 @@
 $(document).ready(function(){
     const $mainSl = $('.single-item'),
           $advSl = $('.adv-slider'),
-          $aboutSl = $('.location-slider');
+          $aboutSl = $('.location-slider'),
+          $overlaySl = $('.overlay-slider');
 
     $mainSl.slick({
         infinite: true,
@@ -43,8 +44,34 @@ $(document).ready(function(){
         autoplay:true,
         dots: true,
         speed: 700,
-        slidesToShow: 1
+        slidesToShow: 1,
+        fade: true
     });
+   
+    $('.first-group__location_slide').on('click', function () {
+        $('.overlay').fadeIn(500);
+        $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
+            infinite: true,
+            arrows: true,
+            autoplay: false,
+            dots: true,
+            speed: 700,
+            slidesToShow: 1,
+            fade: false
+        });
+    });
+
+ 
+    $('.overlay').on('click', function (e) {
+        if ($(e.target).closest('.overlay-slider').length) {
+            return;
+        };
+        $('.overlay').fadeOut(500);
+    }); 
+
+    // sliders and other main
+
+    // form
 
     $('.request__form_phone').inputmask("+7(999)999-99-99");
     jQuery.validator.addMethod("checkMaskPhone", function (value, el) {
@@ -70,6 +97,10 @@ $(document).ready(function(){
     });
 });
 
+    // form
+
+    //menu
+
 const hamburger = document.querySelector('.hamburger-menu'),
       menu = document.querySelector('.promo__header_menu'),
       links = document.querySelectorAll('.promo__header_menu-link'),
@@ -94,3 +125,5 @@ if (window.screen.width <= 720) {
         advantages.classList.remove('adv-slider');
     }
 }
+
+    //menu
