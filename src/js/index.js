@@ -47,7 +47,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         fade: true
     });
-   
+
     $('.first-group__location_slide').on('click', function () {
         $('.overlay').fadeIn(500);
         $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
@@ -61,7 +61,6 @@ $(document).ready(function(){
         });
     });
 
- 
     $('.overlay').on('click', function (e) {
         if ($(e.target).closest('.overlay-slider').length) {
             return;

@@ -18,9 +18,13 @@
         }
     }
     &__location {
+        position: relative;
         @include block-slide-wrap;
         &_slider {
             @include slider;
+        }
+        &_slide {
+            @include zoom;
         }
         &_descr {
             @include slide-descr-start;
@@ -78,7 +82,7 @@
         max-width: 1000px;
         height: 597px;
         margin: 0 auto;
-        margin-top: 60px;
+        margin-top: 140px;
         opacity: 1;
         img {
             width: 100%;
