@@ -48,6 +48,8 @@ $(document).ready(function(){
         fade: true
     });
 
+    // location slider
+
     $('.first-group__location_slide').on('click', function () {
         $('.overlay').fadeIn(500);
         $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
@@ -66,9 +68,51 @@ $(document).ready(function(){
             return;
         };
         $('.overlay').fadeOut(500);
-    }); 
+    });
 
-    // sliders and other main
+    // andezit slider
+
+    $('.first-group__andezit_slide').on('click', function () {
+        $('.overlay-2').fadeIn(500);
+        $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
+            infinite: true,
+            arrows: true,
+            autoplay: false,
+            dots: true,
+            speed: 700,
+            slidesToShow: 1,
+            fade: false
+        });
+    });
+
+    $('.overlay-2').on('click', function (e) {
+        if ($(e.target).closest('.overlay-slider').length) {
+            return;
+        };
+        $('.overlay-2').fadeOut(500);
+    });
+
+    // work slide
+
+    $('.first-group__work_slide').on('click', function () {
+        $('.overlay-3').fadeIn(500);
+        $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
+            infinite: true,
+            arrows: true,
+            autoplay: false,
+            dots: true,
+            speed: 700,
+            slidesToShow: 1,
+            fade: false
+        });
+    });
+
+    $('.overlay-3').on('click', function (e) {
+        if ($(e.target).closest('.overlay-slider').length) {
+            return;
+        };
+        $('.overlay-3').fadeOut(500);
+    });
 
     // form
 

@@ -17,7 +17,7 @@
             color: #FFFFFF;
         }
     }
-    &__location {
+    &__location, &__work {
         position: relative;
         @include block-slide-wrap;
         &_slider {
@@ -63,11 +63,14 @@
         &_slider {
             @include slider;
         }
+        &_slide {
+            @include zoom;
+        }
     }
     
 }
 
-.overlay, .overlay-2 {
+.overlay, .overlay-2, .overlay-3 {
     display: none;
     position: fixed;
     width: 100%;
