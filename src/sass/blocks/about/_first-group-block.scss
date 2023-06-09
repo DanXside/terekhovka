@@ -17,7 +17,7 @@
             color: #FFFFFF;
         }
     }
-    &__location, &__work {
+    &__location, &__work, &__products {
         position: relative;
         @include block-slide-wrap;
         &_slider {
@@ -42,7 +42,7 @@
             }
         }
     }
-    &__andezit {
+    &__andezit, &__certificate {
         @include block-slide-wrap;
         &_descr {
             @include slide-descr-end;
@@ -67,10 +67,18 @@
             @include zoom;
         }
     }
+    &__certificate {
+        &_descr {
+            align-items: start;
+            &-title {
+                justify-content: start;
+            }
+        }
+    }
     
 }
 
-.overlay, .overlay-2, .overlay-3 {
+.overlay, .overlay-2, .overlay-3, .overlay-4, .overlay-5 {
     display: none;
     position: fixed;
     width: 100%;

@@ -114,6 +114,51 @@ $(document).ready(function(){
         $('.overlay-3').fadeOut(500);
     });
 
+    //products slide
+
+    $('.first-group__products_slide').on('click', function () {
+        $('.overlay-4').fadeIn(500);
+        $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
+            infinite: true,
+            arrows: true,
+            autoplay: false,
+            dots: true,
+            speed: 700,
+            slidesToShow: 1,
+            fade: false
+        });
+    });
+
+    $('.overlay-4').on('click', function (e) {
+        if ($(e.target).closest('.overlay-slider').length) {
+            return;
+        };
+        $('.overlay-4').fadeOut(500);
+    });
+
+    // certificate slide
+
+    $('.first-group__certificate_slide').on('click', function () {
+        $('.overlay-5').fadeIn(500);
+        $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
+            infinite: true,
+            arrows: true,
+            autoplay: false,
+            dots: true,
+            speed: 700,
+            slidesToShow: 1,
+            fade: false
+        });
+    });
+
+    $('.overlay-5').on('click', function (e) {
+        if ($(e.target).closest('.overlay-slider').length) {
+            return;
+        };
+        $('.overlay-5').fadeOut(500);
+    });
+
+
     // form
 
     $('.request__form_phone').inputmask("+7(999)999-99-99");
