@@ -1,0 +1,25 @@
+@media (min-width: 1930px) and (max-width: 2560px) {
+  .container {
+    max-width: 1920px;
+  }
+  .promo {
+    &__top-header {
+      max-width: 1850px;
+    }
+    &__header {
+      &_wrapper {
+        max-width: 1920px;
+      }
+    }
+  }
+
+  .first-group {
+    &__andezit {
+      &_descr {
+        &-title {
+          padding-right: 280px;
+        }
+      }
+    }
+  }
+}

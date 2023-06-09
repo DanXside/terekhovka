@@ -17,6 +17,9 @@
     align-items: start;
     max-width: 710px;
     max-height: 400px;
+    @media (min-width: 1930px) and (max-width: 2560px) {
+        max-width: 930px;
+    }
 }
 
 @mixin slide-descr-end {
@@ -26,6 +29,9 @@
     align-items: end;
     max-width: 710px;
     max-height: 400px;
+    @media (min-width: 1930px) and (max-width: 2560px) {
+        max-width: 930px;
+    }
 }
 
 @mixin slide-descr-p {
