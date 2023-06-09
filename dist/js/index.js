@@ -2,7 +2,8 @@ $(document).ready(function(){
     const $mainSl = $('.single-item'),
           $advSl = $('.adv-slider'),
           $aboutSl = $('.location-slider'),
-          $overlaySl = $('.overlay-slider');
+          $overlaySl = $('.overlay-slider'),
+          $prefootSl = $('.pre-footer__slider');
 
     $mainSl.slick({
         infinite: true,
@@ -46,6 +47,16 @@ $(document).ready(function(){
         speed: 700,
         slidesToShow: 1,
         fade: true
+    });
+
+    $prefootSl.slick({
+        infinite: true,
+        arrows: true,
+        autoplay:true,
+        dots: false,
+        speed: 700,
+        slidesToShow: 3,
+        fade: false
     });
 
     // location slider
