@@ -56,7 +56,16 @@ $(document).ready(function(){
         dots: false,
         speed: 700,
         slidesToShow: 3,
-        fade: false
+        fade: false,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 1921,
+                settings: {
+                    slidesToShow: 4
+                }
+            }
+        ]
     });
 
     // location slider

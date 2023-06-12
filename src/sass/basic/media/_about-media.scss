@@ -28,12 +28,28 @@
       margin-top: 200px;
     }
   }
+
+  .pre-footer {
+    &__slide {
+      width: 269px;
+      img {
+        width: 269px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1400px) {
   .first-group {
     .container {
       max-width: 1200px;
+    }
+    &__main-title {
+      height: 130px;
+      padding-top: 50px;
+      h1 {
+        font-size: 30px;
+      }
     }
     &__location, &__work, &__products, &__andezit, &__certificate {
       &_descr {
@@ -68,10 +84,15 @@
     width: 10px;
     height: 10px;
   }
+  .not-block-main {
+    .container {
+      max-width: 100%;
+    }
+  }
 
   .not-block {
     padding: 30px 100px 30px 100px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     &__images {
       img {
