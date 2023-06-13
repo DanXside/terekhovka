@@ -156,3 +156,62 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .first-group {
+    .container {
+      max-width: 900px;
+    }
+    &__products {
+      align-items: start;
+    }
+    &__certificate {
+      &_descr {
+        margin-bottom: 40px;
+      }
+    }
+
+    .overlay, .overlay-2, .overlay-3, .overlay-4, .overlay-5 {
+      &-slider {
+        max-width: 720px;
+        margin-top: 200px;
+        img {
+          height: 430px;
+        }
+      }
+      .slick-prev, .slick-next {
+        top: 35%;
+      }
+      .slick-dots {
+        top: 70%;
+      }
+    }
+  }
+  
+  .banner {
+    .container {
+      max-width: 900px;
+    }
+    &__descr {
+      max-width: 470px;
+    }
+  }
+  
+  .pre-footer {
+    .container {
+      max-width: 900px;
+    }
+    &__slide {
+      width: 280px;
+      img {
+        width: 280px;
+      }
+    }
+    .slick-prev {
+      left: -35px;
+    }
+    .slick-next {
+      right: -10px;
+    }
+  }
+}

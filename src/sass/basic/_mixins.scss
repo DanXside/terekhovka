@@ -24,6 +24,10 @@
         max-width: 650px;
         max-height: 200px;
     }
+    @media screen and (max-width: 1000px) {
+        max-width: 370px;
+        max-height: 260px;
+    }
 }
 
 @mixin slide-descr-end {
@@ -39,6 +43,10 @@
     @media screen and (max-width: 1400px) {
         max-width: 650px;
         max-height: 200px;
+    }
+    @media screen and (max-width: 1000px) {
+        max-width: 370px;
+        max-height: 260px;
     }
 }
 
