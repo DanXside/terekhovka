@@ -99,7 +99,8 @@ $(document).ready(function(){
         if ($(e.target).closest('.overlay-slider').length) {
             return;
         };
-        $('.overlay').fadeOut(500);
+        $overlaySl.slick('unslick');
+        $('.overlay').fadeOut(200);
     });
 
     // andezit slider
@@ -121,7 +122,8 @@ $(document).ready(function(){
         if ($(e.target).closest('.overlay-slider').length) {
             return;
         };
-        $('.overlay-2').fadeOut(500);
+        $overlaySl.slick('unslick');
+        $('.overlay-2').fadeOut(200);
     });
 
     // work slide
@@ -143,7 +145,8 @@ $(document).ready(function(){
         if ($(e.target).closest('.overlay-slider').length) {
             return;
         };
-        $('.overlay-3').fadeOut(500);
+        $overlaySl.slick('unslick');
+        $('.overlay-3').fadeOut(200);
     });
 
     //products slide
@@ -165,7 +168,8 @@ $(document).ready(function(){
         if ($(e.target).closest('.overlay-slider').length) {
             return;
         };
-        $('.overlay-4').fadeOut(500);
+        $overlaySl.slick('unslick');
+        $('.overlay-4').fadeOut(200);
     });
 
     // certificate slide
@@ -187,7 +191,8 @@ $(document).ready(function(){
         if ($(e.target).closest('.overlay-slider').length) {
             return;
         };
-        $('.overlay-5').fadeOut(500);
+        $overlaySl.slick('unslick');
+        $('.overlay-5').fadeOut(200);
     });
 
 
