@@ -316,3 +316,147 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .first-group {
+    .container {
+      max-width: 520px;
+    }
+  }
+
+  .not-block {
+    &__descr {
+      max-width: 330px;
+    }
+    &__images {
+      img {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+
+    }
+  }
+
+  .banner {
+    &__wrap {
+      height: 157px;
+    }
+    &__descr {
+      max-width: 245px;
+      font-size: 14px;
+    }
+    &__icons {
+      width: 210px;
+      img {
+        width: 97px;
+        height: 89px;
+      }
+    }
+  }
+  
+  .pre-footer {
+    &__video {
+      max-width: 520px;
+      height: 250px;
+    }
+    &__slider {
+      max-width: 480px;
+      margin-left: 55px;
+    }
+    &__slide {
+      width: 141px;
+      img {
+        width: 141px;
+      }
+    }
+    .slick-next {
+      right: -10px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .first-group {
+    .container {
+      max-width: 290px;
+    }
+    &__main-title {
+      height: 50px;
+      padding-top: 15px;
+      h1 {
+        font-size: 16px;
+      }
+    }
+    &__andezit, &__products {
+      &_descr {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .slick-dots {
+    top: 83%;
+  }
+
+  .not-block {
+    flex-direction: column;
+    height: 300px;
+    padding: 30px 50px;
+    &__images {
+      max-width: 290px;
+      justify-content: space-between;
+      img {
+        width: 123px;
+        height: 114px;
+        &:nth-child(2) {
+          display: block;
+        }
+      }
+    }
+    &__descr {
+      font-size: 12px;
+    }
+  }
+
+  .banner {
+    &__wrap {
+      flex-direction: column;
+      max-width: 290px;
+      height: 270px;
+      margin: 0 auto;
+    }
+    &__descr {
+      text-align: center;
+    }
+  }
+  
+  .pre-footer {
+    &__geografy {
+      img {
+        max-width: 290px;
+        height: 160px;
+      }
+    }
+    &__video {
+      max-width: 290px;
+      height: 150px;
+    }
+    &__slider {
+      max-width: 260px;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    &__slide {
+      width: 115px;
+      margin-left: 10px;
+      img {
+        width: 115px;
+      }
+    }
+    .slick-next {
+      right: -10%;
+    }
+  }
+
+}

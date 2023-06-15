@@ -60,6 +60,18 @@ $(document).ready(function(){
         mobileFirst: true,
         responsive: [
             {
+                breakpoint: 0,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 401,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
                 breakpoint: 1921,
                 settings: {
                     slidesToShow: 4

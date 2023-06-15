@@ -31,6 +31,12 @@
     @media screen and (max-width: 720px) {
         max-width: 660px;
     }
+    @media screen and (max-width: 576px) {
+        max-width: 520px;
+    }
+    @media screen and (max-width: 400px) {
+        max-width: 290px;
+    }
 }
 
 @mixin slide-descr-end {
@@ -54,6 +60,12 @@
     @media screen and (max-width: 720px) {
         max-width: 660px;
     }
+    @media screen and (max-width: 576px) {
+        max-width: 520px;
+    }
+    @media screen and (max-width: 400px) {
+        max-width: 290px;
+    }
 }
 
 @mixin slide-descr-p {
@@ -62,6 +74,9 @@
     line-height: 151%;
     margin-top: 50px;
     color: #30383E;
+    @media screen and (max-width: 400px) {
+        font-size: 12px !important;
+    }
 }
 
 @mixin slide-descr-h2 {
@@ -71,6 +86,9 @@
     color: #30383E;
     margin: 0;
     margin-left: 30px;
+    @media screen and (max-width: 400px) {
+        font-size: 20px !important;
+    }
 }
 
 @mixin block-slide-wrap {
@@ -99,7 +117,24 @@
         max-width: 660px;
         height: 320px;
         img {
+            max-width: 660px;
             height: 320px;
+        }
+    }
+    @media screen and (max-width: 576px) {
+        max-width: 520px;
+        height: 250px;
+        img {
+            max-width: 520px;
+            height: 250px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        max-width: 290px;
+        height: 185px;
+        img {
+            max-width: 290px;
+            height: 185px;
         }
     }
 }
