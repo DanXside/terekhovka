@@ -1416,7 +1416,7 @@ li.slick-active button {
 
     .promo__top-header_title h1 {
         text-align: end;
-        font-size: 1.2rem
+        font-size: 1.4rem
     }
 
     .promo__top-header_lang {
@@ -1443,9 +1443,9 @@ li.slick-active button {
         flex-wrap: wrap;
         justify-content: end;
         align-items: center;
-        width: 64rem;
+        width: 70rem;
         height: 6rem;
-        font-size: 1.4rem
+        font-size: 1.6rem
     }
 
     .promo__header_menu li {
@@ -1474,15 +1474,18 @@ li.slick-active button {
     }
 
     .divide-defense a {
-        font-size: 1.6rem;
+        font-size: 2rem;
         line-height: 100%
     }
 
     .bulletin-price {
-        align-items: start;
         height: 33rem;
         background-size: cover;
-        padding: 5.2rem 4.5rem 3.3rem 4.5rem
+        padding: 5.2rem 0 3.3rem 0
+    }
+    
+    .bulletin-price__wrap {
+        max-width: 130rem;
     }
 
     .bulletin-price_left-card {
@@ -1491,7 +1494,7 @@ li.slick-active button {
     }
 
     .bulletin-price_left-card_title {
-        font-size: 3.6rem
+        font-size: 4rem
     }
 
     .bulletin-price_left-card_subtitle {
@@ -1505,22 +1508,22 @@ li.slick-active button {
     }
 
     .bulletin-price_right-card {
-        width: 75rem;
+        width: 77rem;
         height: 24.5rem
     }
 
     .bulletin-price_right-card_item_key {
-        font-size: 1.8rem
+        font-size: 2rem
     }
 
     .bulletin-price_right-card_item_descr {
-        width: 50rem;
-        font-size: 1.8rem
+        width: 54rem;
+        font-size: 2rem
     }
 
     .bulletin-price_right-card_bottom-links {
         width: 20rem;
-        margin-top: 1.5rem
+        margin-top: 0.6rem
     }
 
     .bulletin-price_right-card_bottom-links a {
@@ -1532,13 +1535,13 @@ li.slick-active button {
     }
 
     .products__title {
-        font-size: 3.6rem;
+        font-size: 4rem;
         margin-bottom: 0
     }
 
     .products__descr {
         max-width: 100rem;
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin-top: 1.5rem
     }
 
@@ -1615,8 +1618,8 @@ li.slick-active button {
     }
 
     .about-product__advantages_item img {
-        width: 50%;
-        height: 50%
+        width: 60%;
+        height: 60%
     }
 
     .about-product__advantages_item-descr {
@@ -1626,36 +1629,36 @@ li.slick-active button {
     }
 
     .request {
-        height: 37rem;
+        height: 39rem;
         padding: 2rem 0 2.5rem 0
     }
 
     .request__title {
-        font-size: 3.6rem;
+        font-size: 4rem;
         margin-bottom: 3.5rem
     }
 
     .request__form {
-        max-width: 50rem;
+        max-width: 62rem;
         min-height: 18rem
     }
 
     .request__form input {
-        width: 50rem;
-        height: 4rem;
+        width: 62rem;
+        height: 5rem;
         font-size: 1.2rem
     }
 
     .request__form input::-moz-placeholder {
-        font-size: 1.6rem
+        font-size: 2rem
     }
 
     .request__form input::placeholder {
-        font-size: 1.6rem
+        font-size: 2rem
     }
 
     .request__form_phone {
-        margin-top: 5rem
+        margin-top: 6rem
     }
 
     .request__form_btn {
@@ -1670,7 +1673,7 @@ li.slick-active button {
     }
 
     .news__title {
-        font-size: 3.6rem
+        font-size: 3.8rem
     }
 
     .news__wrapper {
@@ -1696,7 +1699,7 @@ li.slick-active button {
     }
 
     .news__link a {
-        font-size: 1.6rem
+        font-size: 1.8rem
     }
 
     .footer {
@@ -1716,8 +1719,8 @@ li.slick-active button {
     }
 
     .footer__item-contacts img {
-        width: 25rem;
-        height: 4.7rem
+        width: 30rem;
+        height: 6rem
     }
 
     .footer__contacts {
@@ -1737,7 +1740,7 @@ li.slick-active button {
     }
 
     .footer__menu a {
-        font-size: 1.2rem
+        font-size: 1.6rem
     }
 
     .footer__item-adds {
@@ -1750,7 +1753,7 @@ li.slick-active button {
     }
 
     .footer__adds a {
-        font-size: 1.2rem
+        font-size: 1.6rem
     }
 
     .footer__live-internet {
@@ -1759,67 +1762,6 @@ li.slick-active button {
     }
 }
 
-@media (max-width: 1200px) {
-    .bulletin-price_left-card_title {
-        font-size: 3.2rem
-    }
-
-    .bulletin-price_right-card {
-        width: 60rem
-    }
-
-    .bulletin-price_right-card_item_key {
-        font-size: 1.4rem
-    }
-
-    .bulletin-price_right-card_item_descr {
-        width: 40rem;
-        font-size: 1.4rem
-    }
-
-    .bulletin-price_right-card_bottom-links {
-        margin-top: 4rem
-    }
-
-    .products__item_title {
-        font-size: 2.2rem
-    }
-
-    .about-product__info {
-        height: 29rem
-    }
-
-    .about-product__info_term {
-        width: 60rem;
-        height: 21rem
-    }
-
-    .about-product__info_term p {
-        width: 54rem
-    }
-
-    .about-product__info_factory {
-        width: 56rem;
-        font-size: 2.2rem
-    }
-
-    .about-product__advantages_item {
-        width: 17rem
-    }
-
-    .about-product__advantages_item-descr {
-        width: 17rem;
-        font-size: 1.4rem
-    }
-
-    .footer__item-menu {
-        min-height: 30rem
-    }
-
-    .footer__item-adds {
-        max-width: 40rem
-    }
-}
 
 @media screen and (max-width: 1000px) {
     .container {
