@@ -322,6 +322,22 @@
     .container {
       max-width: 520px;
     }
+    .overlay, .overlay-2, .overlay-3, .overlay-4, .overlay-5 {
+      &-slider {
+        max-width: 100%;
+        img {
+          max-width: 100%;
+        }
+      }
+      .slick-prev {
+        left: 0;
+        z-index: 20;
+      }
+      .slick-next {
+        right: 7%;
+        z-index: 20;
+      }
+    }
   }
 
   .not-block {
@@ -391,6 +407,11 @@
     &__andezit, &__products {
       &_descr {
         margin-bottom: 20px;
+      }
+    }
+    .overlay, .overlay-2, .overlay-3, .overlay-4, .overlay-5 {
+      .slick-next {
+        right: 10%;
       }
     }
   }

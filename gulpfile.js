@@ -16,6 +16,7 @@ gulp.task('server', function() {
     });
 
     gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("dist/css/*.css").on('change', browserSync.reload);
 });
 
 gulp.task('styles', function() {
