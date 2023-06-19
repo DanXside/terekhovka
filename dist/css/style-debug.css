@@ -37,7 +37,7 @@ body {
 
 .promo__top-header_title h1 {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 139%;
     text-align: center;
     color: #fff
@@ -306,7 +306,7 @@ body {
     row-gap: 4.286rem;
     min-width: 130rem;
     margin: 0 auto;
-    margin-top: 2.5rem
+    margin-top: 5rem
 }
 
 .products__item {
@@ -417,14 +417,14 @@ body {
 }
 
 .about-product__info_term {
-    width: 85.6rem;
+    width: 95.6rem;
     height: 19rem;
     padding: 3.4rem 3.6rem 4.5rem 4.2rem;
     border: 0.4rem solid #46515a
 }
 
 .about-product__info_term p {
-    width: 77.8rem;
+    width: 87.8rem;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 132%;
@@ -441,9 +441,9 @@ body {
 }
 
 .about-product__info_factory {
-    width: 77rem;
+    width: 97rem;
     font-weight: 600;
-    font-size: 2.4rem;
+    font-size: 3rem;
     line-height: 149.5%;
     color: #30383e
 }
@@ -1696,7 +1696,11 @@ li.slick-active button {
 
     .news__item {
         max-width: 45rem;
-        max-height: 62rem
+        max-height: 60rem
+    }
+
+    .news__item img {
+        height: 35.174rem;
     }
 
     .news__item_title {
@@ -1762,10 +1766,12 @@ li.slick-active button {
     }
 
     .footer__adds:not(:last-child) {
-        margin-bottom: 1.5rem
+        margin-bottom: 2rem
     }
 
     .footer__adds a {
+        display: flex;
+        align-items: center;
         font-size: 1.6rem
     }
 
