@@ -139,7 +139,7 @@ body {
     line-height: 128.5%;
     width: 83rem;
     height: 16.3rem;
-    left: 30rem;
+    left: 37rem;
     top: 45.5rem;
     color: #fff
 }
@@ -221,7 +221,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 88.5rem;
+    width: 100rem;
     height: 26.2rem
 }
 
@@ -570,7 +570,7 @@ body {
 }
 
 .news {
-    height: 110rem;
+    height: 100rem;
     padding: 6rem 10rem 3.5rem
 }
 
@@ -596,12 +596,12 @@ body {
     justify-content: space-between;
     align-items: start;
     max-width: 57.143rem;
-    height: 80.714rem
+    height: 70.714rem
 }
 
 .news__item img {
     width: 100%;
-    height: 51.429rem;
+    height: 40.429rem;
 }
 
 .news__item_title {
@@ -1403,11 +1403,11 @@ li.slick-active button {
 
 @media (max-width: 1400px) {
     .container {
-        max-width: 130rem
+        max-width: 142.857rem
     }
 
     .promo__top-header {
-        max-width: 130rem;
+        max-width: 142.857rem;
         margin: 0 auto
     }
 
@@ -1430,7 +1430,7 @@ li.slick-active button {
     }
 
     .promo__header_wrapper {
-        max-width: 130rem;
+        max-width: 142.857rem;
         height: 6rem
     }
 
@@ -1458,20 +1458,19 @@ li.slick-active button {
     }
 
     .slider {
-        height: 42.6rem
+        height: 50.6rem
     }
 
     .slider_item {
-        max-width: 140rem;
-        height: 42.6rem
+        height: 50.6rem
     }
 
     .slider_text-item {
         font-size: 2.6rem;
         line-height: 129%;
         width: 56rem;
-        top: 27.5rem;
-        left: 5rem
+        top: 32.5rem;
+        left: 14vw;
     }
 
     .divide-defense a {
@@ -1480,18 +1479,18 @@ li.slick-active button {
     }
 
     .bulletin-price {
-        height: 33rem;
+        height: 36rem;
         background-size: cover;
         padding: 5.2rem 0 3.3rem 0
     }
     
     .bulletin-price__wrap {
-        max-width: 130rem;
+        max-width: 142.857rem;
     }
 
     .bulletin-price_left-card {
         width: 40rem;
-        height: 24.5rem
+        height: 28.5rem
     }
 
     .bulletin-price_left-card_title {
@@ -1504,13 +1503,13 @@ li.slick-active button {
     }
 
     .bulletin-price_left-card_date {
-        margin-top: 7rem;
+        margin-top: 9rem;
         font-size: 1.8rem
     }
 
     .bulletin-price_right-card {
-        width: 77rem;
-        height: 24.5rem
+        width: 83rem;
+        height: 28.5rem
     }
 
     .bulletin-price_right-card_item_key {
@@ -1524,7 +1523,7 @@ li.slick-active button {
 
     .bulletin-price_right-card_bottom-links {
         width: 20rem;
-        margin-top: 0.6rem
+        margin-top: 2.6rem
     }
 
     .bulletin-price_right-card_bottom-links a {
@@ -1548,10 +1547,23 @@ li.slick-active button {
 
     .products__wrapper {
         min-width: 100rem;
-        grid-template-columns:repeat(3, minmax(34rem, 42rem));
-        grid-auto-rows: min-max(35rem, 43.5rem);
+        grid-template-columns:repeat(3, minmax(34rem, 48rem));
+        grid-auto-rows: minmax(35rem, 56rem);
         -moz-column-gap: 1.5rem;
         column-gap: 1.5rem
+    }
+
+    .products__item img {
+        width: 28.571rem;
+        height: 28.571rem;
+    }
+
+    .products__item_title {
+        font-size: 2.857rem;
+    }
+
+    .products__item_subtitle {
+        font-size: 2.286rem;
     }
 
     .products__item:nth-child(n+7) {
@@ -1563,12 +1575,12 @@ li.slick-active button {
     }
 
     .products__link a {
-        font-size: 1.6rem
+        font-size: 2rem
     }
 
     .about-product__banner {
         height: 35.5rem;
-        padding: 11.5rem 0 0 2rem;
+        padding: 11.5rem 0 0 1rem;
         background-size: cover
     }
 
@@ -1669,7 +1681,7 @@ li.slick-active button {
     }
 
     .news {
-        height: 74.5rem;
+        height: 88.5rem;
         padding: 4rem 0 3.5rem
     }
 
@@ -1678,13 +1690,13 @@ li.slick-active button {
     }
 
     .news__wrapper {
-        max-width: 130rem;
+        max-width: 142.857rem;
         margin-top: 4rem
     }
 
     .news__item {
-        max-width: 40rem;
-        max-height: 50rem
+        max-width: 45rem;
+        max-height: 62rem
     }
 
     .news__item_title {
@@ -1759,7 +1771,7 @@ li.slick-active button {
 
     .footer__live-internet {
         top: 34.5rem;
-        right: 16rem
+        right: 28rem
     }
 }
 
