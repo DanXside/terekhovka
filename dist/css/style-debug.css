@@ -1370,10 +1370,28 @@ li.slick-active button {
 
 @media (min-width: 1921px) and (max-width: 2560px) {
     .container {
-        max-width: 200rem;
+        max-width: 274.286rem;
     }
+
+    .promo__top-header {
+        max-width: 274.286rem;
+    }
+
+    .promo__header_wrapper {
+        max-width: 274.286rem;
+        height: 6rem
+    }
+
+    .bulletin-price__wrap {
+        max-width: 274.286rem;
+    }
+
+    .products__wrapper {
+        grid-template-columns:repeat(4, minmax(34rem, 61rem));
+    }
+
     .slider_text-item {
-        left: 23%
+        left: 13%
     }
 
     .bulletin-price {
@@ -1398,9 +1416,13 @@ li.slick-active button {
         margin-top: 4rem;
         text-align: center
     }
+    
+    .news__wrapper {
+        max-width: 274.286rem;
+    }
 
     .footer__live-internet {
-        left: 75%
+        left: 85%
     }
 }
 
