@@ -1368,9 +1368,12 @@ li.slick-active button {
     height: 4rem
 }
 
-@media (min-width: 1921px)and (max-width: 2560px) {
+@media (min-width: 1921px) and (max-width: 2560px) {
+    .container {
+        max-width: 200rem;
+    }
     .slider_text-item {
-        left: 17%
+        left: 23%
     }
 
     .bulletin-price {
@@ -3032,18 +3035,7 @@ li.slick-active button {
     }
 }
 
-@media (min-width: 1930px)and (max-width: 2560px) {
-    .container {
-        max-width: 192rem
-    }
-
-    .promo__top-header {
-        max-width: 185rem
-    }
-
-    .promo__header_wrapper {
-        max-width: 192rem
-    }
+@media (min-width: 1930px) and (max-width: 2560px) {
 
     .first-group__andezit_descr-title {
         padding-right: 28rem
