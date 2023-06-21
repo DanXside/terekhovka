@@ -1071,7 +1071,39 @@ body {
     }
 }
 
-.first-group__andezit_slide:before, .first-group__certificate_slide:before {
+.first-group__location_slide img, .first-group__andezit_slide img, .first-group__work_slide img, .first-group__products_slide img, .first-group__certificate_slide img, .pre-footer__geografy img {
+    width: 72.857rem;
+    height: 40.714rem;
+}
+
+.first-group__location_descr, .first-group__andezit_descr, .first-group__work_descr, .first-group__products_descr, .first-group__certificate_descr, .pre-footer__geografy_descr {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 122.286rem;
+}
+
+.first-group__andezit_descr, .first-group__certificate_descr {
+    margin-bottom: 0;
+}
+
+.first-group__location_descr-title, .first-group__andezit_descr-title, .first-group__work_descr-title, .first-group__products_descr-title, .first-group__certificate_descr-title, .pre-footer__geografy_descr-title {
+    flex-direction: column;
+    align-items: start;
+    width: 91.429rem;
+    margin-left: 6rem;
+}
+
+.first-group__location_descr-title p, .first-group__andezit_descr-title p, .first-group__work_descr-title p, .first-group__products_descr-title p, .first-group__certificate_descr-title p, .pre-footer__geografy_descr-title p {
+    margin-top: 3rem;
+    font-size: 2.2rem;
+}
+
+.first-group__location_descr-title h2, .first-group__andezit_descr-title h2, .first-group__work_descr-title h2, .first-group__products_descr-title h2, .first-group__certificate_descr-title h2, .pre-footer__geografy_descr-title h2 {
+    margin: 0;
+}
+
+.pre-footer__slide:before {
     pointer-events: none;
     opacity: 0;
     transition: ease opacity .3s all;
@@ -1079,15 +1111,15 @@ body {
     content: "";
     position: absolute;
     background: url(../icons/about/zoom-slide.svg);
-    width: 4rem;
-    height: 4rem;
-    top: 50%;
-    left: 50%;
+    width: 5rem;
+    height: 5rem;
+    top: 45%;
+    left: 45%;
     cursor: pointer;
     z-index: 8
 }
 
-.first-group__andezit_slide:hover:before, .first-group__certificate_slide:hover:before {
+.pre-footer__slide:hover:before {
     opacity: 1;
     transition-delay: .5s
 }
@@ -1100,7 +1132,7 @@ body {
     justify-content: start
 }
 
-.overlay, .overlay-2, .overlay-3, .overlay-4, .overlay-5 {
+.overlay {
     display: none;
     position: fixed;
     width: 100%;
@@ -1112,37 +1144,38 @@ body {
     z-index: 10
 }
 
-.overlay-2-slider, .overlay-3-slider, .overlay-4-slider, .overlay-5-slider, .overlay-slider {
+.overlay-slider {
     max-width: 130rem;
     height: 59.7rem;
     margin: 0 auto;
-    margin-top: 9rem;
+    margin-top: 25rem;
     opacity: 1
 }
 
-.overlay-2-slider img, .overlay-3-slider img, .overlay-4-slider img, .overlay-5-slider img, .overlay-slider img {
+.overlay-slider img {
     width: 100%;
     height: 77.6rem
 }
 
-.overlay .slick-dots, .overlay-2 .slick-dots, .overlay-3 .slick-dots, .overlay-4 .slick-dots, .overlay-5 .slick-dots {
+.overlay .slick-dots {
     top: 130%
 }
 
-.overlay .slick-prev, .overlay-2 .slick-prev, .overlay-3 .slick-prev, .overlay-4 .slick-prev, .overlay-5 .slick-prev {
+.overlay .slick-prev {
     top: 65%;
     left: -8.5rem
 }
 
-.overlay .slick-prev:before, .overlay-2 .slick-prev:before, .overlay-3 .slick-prev:before, .overlay-4 .slick-prev:before, .overlay-5 .slick-prev:before {
+.overlay .slick-prev:before {
     font-size: 8rem
 }
 
-.overlay .slick-next, .overlay-2 .slick-next, .overlay-3 .slick-next, .overlay-4 .slick-next, .overlay-5 .slick-next {
-    top: 65%
+.overlay .slick-next {
+    top: 65%;
+    right: -6rem;
 }
 
-.overlay .slick-next:before, .overlay-2 .slick-next:before, .overlay-3 .slick-next:before, .overlay-4 .slick-next:before, .overlay-5 .slick-next:before {
+.overlay .slick-next:before {
     font-size: 8rem
 }
 
@@ -1168,14 +1201,15 @@ li.slick-active button {
     background: url(../img/about/backgrounds/red-texture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4.5rem 15rem 3rem 17rem
+    padding: 4.5rem 15rem 3rem 17rem;
+    margin-top: 4rem;
 }
 
 .not-block__descr {
-    max-width: 59rem;
+    max-width: 95rem;
     height: 12rem;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     line-height: 151%;
     color: #fff
 }
@@ -1202,7 +1236,7 @@ li.slick-active button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 22rem;
+    height: 30rem;
     border: 0.3rem solid #000
 }
 
@@ -1227,6 +1261,11 @@ li.slick-active button {
     margin-top: 4rem
 }
 
+.pre-footer__geografy_descr img {
+    width: 19.857rem;
+    height: 24.714rem;
+}
+
 @media screen and (max-width: 720px) {
     .pre-footer__geografy {
         flex-direction: column;
@@ -1240,11 +1279,7 @@ li.slick-active button {
 
 .pre-footer__geografy_descr {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    max-width: 71rem;
-    max-height: 40rem
+    align-items: center;
 }
 
 @media (min-width: 1930px)and (max-width: 2560px) {
@@ -1287,9 +1322,9 @@ li.slick-active button {
 
 .pre-footer__geografy_descr p {
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     line-height: 151%;
-    margin-top: 5rem;
+    margin-top: 2rem;
     color: #30383e
 }
 
@@ -1302,7 +1337,7 @@ li.slick-active button {
 .pre-footer__geografy_descr-title {
     display: flex;
     justify-content: start;
-    align-items: end
+    align-items: start
 }
 
 .pre-footer__geografy_descr-title h2 {
@@ -1311,7 +1346,6 @@ li.slick-active button {
     line-height: 114%;
     color: #30383e;
     margin: 0;
-    margin-left: 3rem
 }
 
 @media screen and (max-width: 400px) {
@@ -1321,8 +1355,8 @@ li.slick-active button {
 }
 
 .pre-footer__video {
-    max-width: 91rem;
-    height: 44.7rem;
+    max-width: 128.571rem;
+    height: 63.143rem;
     margin: 0 auto;
     margin-top: 4rem
 }
@@ -1332,24 +1366,26 @@ li.slick-active button {
 }
 
 .pre-footer__slider {
-    max-width: 120rem;
+    max-width: 200rem;
     margin: 0 auto;
     margin-top: 4rem;
     margin-bottom: 5rem
 }
 
 .pre-footer__slide {
-    width: 37.3rem
+    position: relative;
+    width: 47.3rem;
+    margin-left: 2rem;
 }
 
 .pre-footer__slide img {
-    width: 37.3rem
+    width: 47.3rem
 }
 
 .pre-footer .slick-prev {
     width: 2rem;
     height: 4rem;
-    left: -5rem
+    left: -7rem
 }
 
 .pre-footer .slick-prev:before {
@@ -1360,7 +1396,7 @@ li.slick-active button {
 .pre-footer .slick-next {
     width: 2rem;
     height: 4rem;
-    right: -2rem
+    right: -6rem
 }
 
 .pre-footer .slick-next:before {

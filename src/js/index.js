@@ -40,23 +40,13 @@ $(document).ready(function(){
         ]
     });
 
-    $aboutSl.slick({
-        infinite: true,
-        arrows: false,
-        autoplay:true,
-        dots: true,
-        speed: 700,
-        slidesToShow: 1,
-        fade: true
-    });
-
     $prefootSl.slick({
         infinite: true,
         arrows: true,
         autoplay:true,
         dots: false,
         speed: 700,
-        slidesToShow: 3,
+        slidesToShow: 4,
         fade: false,
         mobileFirst: true,
         responsive: [
@@ -73,6 +63,12 @@ $(document).ready(function(){
                 }
             },
             {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
                 breakpoint: 1921,
                 settings: {
                     slidesToShow: 4
@@ -81,9 +77,9 @@ $(document).ready(function(){
         ]
     });
 
-    // location slider
+    // certificate slide
 
-    $('.first-group__location_slide').on('click', function () {
+    $('.pre-footer__slider').on('click', function () {
         $('.overlay').fadeIn(500);
         $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
             infinite: true,
@@ -102,98 +98,6 @@ $(document).ready(function(){
         };
         $overlaySl.slick('unslick');
         $('.overlay').fadeOut(200);
-    });
-
-    // andezit slider
-
-    $('.first-group__andezit_slide').on('click', function () {
-        $('.overlay-2').fadeIn(500);
-        $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
-            infinite: true,
-            arrows: true,
-            autoplay: false,
-            dots: true,
-            speed: 700,
-            slidesToShow: 1,
-            fade: false
-        });
-    });
-
-    $('.overlay-2').on('click', function (e) {
-        if ($(e.target).closest('.overlay-slider').length) {
-            return;
-        };
-        $overlaySl.slick('unslick');
-        $('.overlay-2').fadeOut(200);
-    });
-
-    // work slide
-
-    $('.first-group__work_slide').on('click', function () {
-        $('.overlay-3').fadeIn(500);
-        $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
-            infinite: true,
-            arrows: true,
-            autoplay: false,
-            dots: true,
-            speed: 700,
-            slidesToShow: 1,
-            fade: false
-        });
-    });
-
-    $('.overlay-3').on('click', function (e) {
-        if ($(e.target).closest('.overlay-slider').length) {
-            return;
-        };
-        $overlaySl.slick('unslick');
-        $('.overlay-3').fadeOut(200);
-    });
-
-    //products slide
-
-    $('.first-group__products_slide').on('click', function () {
-        $('.overlay-4').fadeIn(500);
-        $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
-            infinite: true,
-            arrows: true,
-            autoplay: false,
-            dots: true,
-            speed: 700,
-            slidesToShow: 1,
-            fade: false
-        });
-    });
-
-    $('.overlay-4').on('click', function (e) {
-        if ($(e.target).closest('.overlay-slider').length) {
-            return;
-        };
-        $overlaySl.slick('unslick');
-        $('.overlay-4').fadeOut(200);
-    });
-
-    // certificate slide
-
-    $('.first-group__certificate_slide').on('click', function () {
-        $('.overlay-5').fadeIn(500);
-        $overlaySl.not('.slick-initialized').slick({  // Решается ошибка при множественном вызове слайдера
-            infinite: true,
-            arrows: true,
-            autoplay: false,
-            dots: true,
-            speed: 700,
-            slidesToShow: 1,
-            fade: false
-        });
-    });
-
-    $('.overlay-5').on('click', function (e) {
-        if ($(e.target).closest('.overlay-slider').length) {
-            return;
-        };
-        $overlaySl.slick('unslick');
-        $('.overlay-5').fadeOut(200);
     });
 
 
