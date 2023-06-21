@@ -59,7 +59,7 @@ $(document).ready(function(){
             {
                 breakpoint: 401,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 4
                 }
             },
             {

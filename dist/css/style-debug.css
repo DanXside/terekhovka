@@ -769,18 +769,6 @@ body {
     max-height: 55.5rem
 }
 
-@media screen and (max-width: 1400px) {
-    .first-group__location_slider, .first-group__products_slider, .first-group__work_slider {
-        max-width: 51rem;
-        height: 28.5rem
-    }
-
-    .first-group__location_slider img, .first-group__products_slider img, .first-group__work_slider img {
-        width: 100%;
-        height: 28.5rem
-    }
-}
-
 @media screen and (max-width: 720px) {
     .first-group__location_slider, .first-group__products_slider, .first-group__work_slider {
         max-width: 66rem;
@@ -850,13 +838,6 @@ body {
 @media (min-width: 1930px)and (max-width: 2560px) {
     .first-group__location_descr, .first-group__products_descr, .first-group__work_descr {
         max-width: 93rem
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .first-group__location_descr, .first-group__products_descr, .first-group__work_descr {
-        max-width: 65rem;
-        max-height: 20rem
     }
 }
 
@@ -950,13 +931,6 @@ body {
     }
 }
 
-@media screen and (max-width: 1400px) {
-    .first-group__andezit_descr, .first-group__certificate_descr {
-        max-width: 65rem;
-        max-height: 20rem
-    }
-}
-
 @media screen and (max-width: 1000px) {
     .first-group__andezit_descr, .first-group__certificate_descr {
         max-width: 37rem;
@@ -1021,18 +995,6 @@ body {
 .first-group__andezit_slider, .first-group__certificate_slider {
     max-width: 93rem;
     max-height: 55.5rem
-}
-
-@media screen and (max-width: 1400px) {
-    .first-group__andezit_slider, .first-group__certificate_slider {
-        max-width: 51rem;
-        height: 28.5rem
-    }
-
-    .first-group__andezit_slider img, .first-group__certificate_slider img {
-        width: 100%;
-        height: 28.5rem
-    }
 }
 
 @media screen and (max-width: 720px) {
@@ -1285,13 +1247,6 @@ li.slick-active button {
 @media (min-width: 1930px)and (max-width: 2560px) {
     .pre-footer__geografy_descr {
         max-width: 93rem
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .pre-footer__geografy_descr {
-        max-width: 65rem;
-        max-height: 20rem
     }
 }
 
@@ -3240,6 +3195,24 @@ li.slick-active button {
     .pre-footer__video {
         max-width: 90rem;
         height: 44rem
+    }
+
+    .pre-footer__slider {
+        max-width: 142.857rem;
+    }
+
+    .pre-footer__slide {
+        width: 30rem;
+        margin-left: 3rem;
+    }
+
+    .pre-footer__slide img {
+        width: 30rem;
+    }
+
+    .pre-footer__slide:before {
+        top: 40%;
+        left: 40%;
     }
 }
 
