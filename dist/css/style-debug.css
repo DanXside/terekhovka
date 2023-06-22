@@ -1002,14 +1002,17 @@ li.slick-active button {
     background: #c71d14
 }
 
+.not-block-main {
+    background: url(../img/about/backgrounds/red-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .not-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url(../img/about/backgrounds/red-texture.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 4.5rem 15rem 3rem 17rem;
+    padding: 4.5rem 0 3rem 0;
     margin-top: 4rem;
 }
 
@@ -3002,7 +3005,7 @@ li.slick-active button {
     }
 
     .not-block {
-        padding: 3rem 10rem 3rem 10rem;
+        padding: 3rem 0 3rem 0;
         max-width: 142.857rem;
         margin: 0 auto;
         margin-top: 4rem;
@@ -3131,7 +3134,7 @@ li.slick-active button {
 
     .not-block {
         max-width: 100rem;
-        padding: 3rem 6rem;
+        padding: 3rem 0 3rem 0;
     }
 
     .banner .container {
@@ -3245,8 +3248,8 @@ li.slick-active button {
     }
 
     .not-block {
-        max-width: 100%;
-        padding: 3rem 11rem;
+        max-width: 82rem;
+        padding: 3rem 0 3rem 0;
     }
 
     .first-group .overlay-2-slider, .first-group .overlay-3-slider, .first-group .overlay-4-slider, .first-group .overlay-5-slider, .first-group .overlay-slider {
@@ -3374,8 +3377,9 @@ li.slick-active button {
     }
 
     .not-block {
+        max-width: 57.143rem;
         height: 23rem;
-        padding: 3rem 13rem;
+        padding: 3rem 0 3rem 0;
         align-items: start;
     }
 
