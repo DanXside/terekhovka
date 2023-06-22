@@ -762,18 +762,6 @@ body {
     max-height: 55.5rem
 }
 
-@media screen and (max-width: 400px) {
-    .first-group__location_slider, .first-group__products_slider, .first-group__work_slider {
-        max-width: 29rem;
-        height: 18.5rem
-    }
-
-    .first-group__location_slider img, .first-group__products_slider img, .first-group__work_slider img {
-        max-width: 29rem;
-        height: 18.5rem
-    }
-}
-
 .first-group__location_descr, .first-group__products_descr, .first-group__work_descr {
     display: flex;
     flex-direction: column;
@@ -796,24 +784,12 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .first-group__location_descr, .first-group__products_descr, .first-group__work_descr {
-        max-width: 29rem
-    }
-}
-
 .first-group__location_descr p, .first-group__products_descr p, .first-group__work_descr p {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 151%;
     margin-top: 5rem;
     color: #30383e
-}
-
-@media screen and (max-width: 400px) {
-    .first-group__location_descr p, .first-group__products_descr p, .first-group__work_descr p {
-        font-size: 1.2rem !important
-    }
 }
 
 .first-group__location_descr-title, .first-group__products_descr-title, .first-group__work_descr-title {
@@ -829,12 +805,6 @@ body {
     color: #30383e;
     margin: 0;
     margin-left: 3rem
-}
-
-@media screen and (max-width: 400px) {
-    .first-group__location_descr-title h2, .first-group__products_descr-title h2, .first-group__work_descr-title h2 {
-        font-size: 2rem !important
-    }
 }
 
 .first-group__andezit, .first-group__certificate {
@@ -867,24 +837,12 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .first-group__andezit_descr, .first-group__certificate_descr {
-        max-width: 29rem
-    }
-}
-
 .first-group__andezit_descr p, .first-group__certificate_descr p {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 151%;
     margin-top: 5rem;
     color: #30383e
-}
-
-@media screen and (max-width: 400px) {
-    .first-group__andezit_descr p, .first-group__certificate_descr p {
-        font-size: 1.2rem !important
-    }
 }
 
 .first-group__andezit_descr-title, .first-group__certificate_descr-title {
@@ -903,27 +861,9 @@ body {
     margin-left: 3rem
 }
 
-@media screen and (max-width: 400px) {
-    .first-group__andezit_descr-title h2, .first-group__certificate_descr-title h2 {
-        font-size: 2rem !important
-    }
-}
-
 .first-group__andezit_slider, .first-group__certificate_slider {
     max-width: 93rem;
     max-height: 55.5rem
-}
-
-@media screen and (max-width: 400px) {
-    .first-group__andezit_slider, .first-group__certificate_slider {
-        max-width: 29rem;
-        height: 18.5rem
-    }
-
-    .first-group__andezit_slider img, .first-group__certificate_slider img {
-        max-width: 29rem;
-        height: 18.5rem
-    }
 }
 
 .first-group__location_slide img, .first-group__andezit_slide img, .first-group__work_slide img, .first-group__products_slide img, .first-group__certificate_slide img, .pre-footer__geografy img {
@@ -1143,24 +1083,12 @@ li.slick-active button {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .pre-footer__geografy_descr {
-        max-width: 29rem
-    }
-}
-
 .pre-footer__geografy_descr p {
     font-weight: 500;
     font-size: 2.2rem;
     line-height: 151%;
     margin-top: 2rem;
     color: #30383e
-}
-
-@media screen and (max-width: 400px) {
-    .pre-footer__geografy_descr p {
-        font-size: 1.2rem !important
-    }
 }
 
 .pre-footer__geografy_descr-title {
@@ -1175,12 +1103,6 @@ li.slick-active button {
     line-height: 114%;
     color: #30383e;
     margin: 0;
-}
-
-@media screen and (max-width: 400px) {
-    .pre-footer__geografy_descr-title h2 {
-        font-size: 2rem !important
-    }
 }
 
 .pre-footer__video {
@@ -3472,7 +3394,16 @@ li.slick-active button {
 
 @media screen and (max-width: 400px) {
     .first-group .container {
-        max-width: 29rem
+        max-width: 45.714rem
+    }
+
+    .first-group__location_slide img, .first-group__andezit_slide img, .first-group__work_slide img, .first-group__products_slide img, .first-group__certificate_slide img, .pre-footer__geografy img {
+        max-width: 45.714rem;
+        height: 25.714rem;
+    }
+
+    .first-group__location_descr, .first-group__andezit_descr, .first-group__work_descr, .first-group__products_descr, .first-group__certificate_descr, .pre-footer__geografy_descr {
+        max-width: 45.174rem;
     }
 
     .first-group__main-title {
@@ -3488,22 +3419,15 @@ li.slick-active button {
         margin-bottom: 2rem
     }
 
-    .first-group .overlay .slick-next, .first-group .overlay-2 .slick-next, .first-group .overlay-3 .slick-next, .first-group .overlay-4 .slick-next, .first-group .overlay-5 .slick-next {
-        right: 10%
-    }
-
-    .slick-dots {
-        top: 83%
-    }
-
     .not-block {
         flex-direction: column;
-        height: 30rem;
+        align-items: center;
+        height: 32rem;
         padding: 3rem 5rem
     }
 
     .not-block__images {
-        max-width: 29rem;
+        width: 30rem;
         justify-content: space-between
     }
 
@@ -3517,12 +3441,12 @@ li.slick-active button {
     }
 
     .not-block__descr {
-        font-size: 1.2rem
+        font-size: 1.4rem;
     }
 
     .banner__wrap {
         flex-direction: column;
-        max-width: 29rem;
+        max-width: 45.174rem;
         height: 27rem;
         margin: 0 auto
     }
@@ -3532,32 +3456,55 @@ li.slick-active button {
     }
 
     .pre-footer__geografy img {
-        max-width: 29rem;
-        height: 16rem
+        max-width: 45.174rem;
+        height: 20rem
     }
 
     .pre-footer__video {
-        max-width: 29rem;
-        height: 15rem
+        max-width: 45.174rem;
+        height: 20rem
     }
 
     .pre-footer__slider {
-        max-width: 26rem;
+        max-width: 36rem;
         margin: 0 auto;
         margin-top: 2rem;
-        margin-bottom: 2rem
+        margin-bottom: 4rem;
+        padding-right: 0;
     }
 
     .pre-footer__slide {
-        width: 11.5rem;
-        margin-left: 1rem
+        width: 14.5rem;
+        margin-left: 2rem;
+        padding-right: 0;
     }
 
     .pre-footer__slide img {
-        width: 11.5rem
+        width: 14.5rem
     }
 
     .pre-footer .slick-next {
-        right: -10%
+        right: -7%
+    }
+
+    .pre-footer__slide:before {
+        left: 40%;
+    }
+
+    .overlay-slider {
+        max-width: 45.714rem;
+        height: 25.714rem;
+    }
+
+    .overlay-slider img {
+        height: 25.714rem
+    }
+
+    .overlay .slick-dots {
+        top: 85%
+    }
+
+    .overlay .slick-prev {
+        left: -5rem;
     }
 }
