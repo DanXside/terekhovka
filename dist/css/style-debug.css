@@ -90,9 +90,9 @@ body {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    width: 130rem;
+    width: 140rem;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 142.5%;
     text-align: right;
     text-transform: uppercase
@@ -108,7 +108,6 @@ body {
 .promo__header_menu a:hover {
     -webkit-text-decoration: double;
     text-decoration: double;
-    text-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, .25);
     color: #9e161a
 }
 
@@ -268,6 +267,10 @@ body {
     color: #952117
 }
 
+.bulletin-price_right-card_bottom-links a:hover {
+    text-decoration: none;
+}
+
 .hamburger-menu {
     display: none
 }
@@ -376,6 +379,10 @@ body {
     text-align: center;
     text-decoration-line: underline;
     color: #8f1807
+}
+
+.products__link a:hover {
+    text-decoration: none;
 }
 
 .about-product__banner {
@@ -613,6 +620,10 @@ body {
     color: #000
 }
 
+.news__item_title:hover {
+    text-decoration: none;
+}
+
 .news__item_descr {
     font-weight: 400;
     font-size: 2.2rem;
@@ -637,6 +648,10 @@ body {
     font-size: 2rem;
     text-decoration-line: underline;
     color: #8f1807
+}
+
+.news__link a:hover {
+    text-decoration: none;
 }
 
 .footer {
@@ -710,6 +725,11 @@ body {
     margin-bottom: 3.5rem
 }
 
+.footer__adds img {
+    width: 4.286rem;
+    height: 4.286rem;
+}
+
 .footer__adds a {
     font-weight: 600;
     font-size: 1.8rem;
@@ -718,6 +738,10 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff
+}
+
+.footer__adds a:hover {
+    color: #9e161a
 }
 
 .footer__live-internet {
@@ -1146,6 +1170,18 @@ li.slick-active button {
         max-width: 274.286rem;
     }
 
+    .promo__top-header_title {
+        width: 255.429rem;
+    }
+
+    .promo__header_menu {
+        width: 150rem;
+    }
+
+    .promo__header_menu a {
+        font-size: 2.2rem;
+    }
+
     .promo__header_wrapper {
         max-width: 274.286rem;
         height: 6rem
@@ -1184,6 +1220,29 @@ li.slick-active button {
         margin: 0 auto;
         margin-top: 4rem;
         text-align: center
+    }
+
+    .about-product__info {
+        height: 33rem;
+    }
+
+    .about-product__info_term {
+        width: 120rem;
+        height: 27rem;
+    }
+
+    .about-product__info_title {
+        font-size: 3.6rem;
+    }
+
+    .about-product__info p {
+        width: 110rem;
+        font-size: 2.6rem;
+    }
+
+    .about-product__info_factory {
+        width: 120rem;
+        font-size: 3.6rem;
     }
     
     .news__wrapper {
@@ -1238,9 +1297,9 @@ li.slick-active button {
         flex-wrap: wrap;
         justify-content: end;
         align-items: center;
-        width: 70rem;
+        width: 80rem;
         height: 6rem;
-        font-size: 1.6rem
+        font-size: 1.8rem
     }
 
     .promo__header_menu li {
@@ -1651,7 +1710,7 @@ li.slick-active button {
 
     .bulletin-price_left-card_subtitle {
         max-width: 100rem;
-        font-size: 1.6rem;
+        font-size: 2rem;
         text-align: center
     }
 
@@ -1672,12 +1731,12 @@ li.slick-active button {
 
     .bulletin-price_right-card_item_key {
         width: 27rem;
-        font-size: 1.8rem
+        font-size: 2rem
     }
 
     .bulletin-price_right-card_item_descr {
-        width: 53rem;
-        font-size: 1.8rem
+        width: 57rem;
+        font-size: 2rem
     }
 
     .bulletin-price_right-card_bottom-links {
@@ -1863,18 +1922,24 @@ li.slick-active button {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: end;
         width: 25rem;
         height: 51rem;
         margin: 0;
         padding: 0;
-        padding-top: 12rem;
-        padding-bottom: 6rem;
+        padding-top: 11rem;
+        padding-bottom: 3rem;
+        padding-right: 3rem;
         text-align: center;
         top: -2.7rem;
-        left: 69%;
+        left: 69.5%;
         background-color: #4b5760;
         transition: .4s all ease-in-out;
         z-index: 10
+    }
+
+    .promo__header_menu.active a {
+        font-size: 1.6rem;
     }
 
     .promo__header_menu a {
@@ -1884,17 +1949,19 @@ li.slick-active button {
     .hamburger-menu {
         position: absolute;
         display: block;
-        width: 5.5rem;
-        height: 3rem;
-        top: 2rem;
-        left: 93%;
+        width: 6.429rem;
+        height: 5.429rem;
+        top: 1rem;
+        left: 92%;
         cursor: pointer;
         z-index: 12;
         transition: .5s all
     }
 
     .hamburger-menu.active .hamburger-menu_span-1 {
-        transform: translateY(1.2rem) rotate(60deg)
+        transform: translateY(1.8rem) rotate(45deg);
+        width: 4rem;
+        background-color: #ffffff;
     }
 
     .hamburger-menu.active .hamburger-menu_span-2 {
@@ -1902,24 +1969,26 @@ li.slick-active button {
     }
 
     .hamburger-menu.active .hamburger-menu_span-3 {
-        transform: translateY(-1rem) rotate(-60deg)
+        width: 4rem;
+        transform: translateY(-1.7rem) rotate(-45deg);
+        background-color: #ffffff;
     }
 
     .hamburger-menu span {
         position: inherit;
         display: block;
-        width: 5.5rem;
+        width: 6.429rem;
         height: 0.4rem;
         transition: .5s all;
         background-color: #8f1807
     }
 
     .hamburger-menu_span-2 {
-        margin-top: 1rem
+        margin-top: 1.8rem
     }
 
     .hamburger-menu_span-3 {
-        margin-top: 2.2rem
+        margin-top: 3.5rem
     }
 
     .slider {
@@ -2179,7 +2248,7 @@ li.slick-active button {
 
     .promo__header_menu.active {
         height: 45.2rem;
-        left: 57%;
+        left: 56%;
         margin-left: 0.2rem;
         padding-top: 10rem
     }
@@ -2189,7 +2258,8 @@ li.slick-active button {
     }
 
     .hamburger-menu {
-        left: 90%
+        top: 1.2rem;
+        left: 88.5%
     }
 
     .slider {
@@ -2396,10 +2466,6 @@ li.slick-active button {
         justify-content: center;
     }
 
-    .footer__adds:nth-child(2) img {
-        height: 5rem;
-    }
-
     .footer__item-contacts {
         top: 10%;
         left: 50%;
@@ -2436,13 +2502,37 @@ li.slick-active button {
     }
 
     .promo__header_menu.active {
-        width: 20rem;
-        height: 31rem;
-        top: -2.8rem;
-        left: 57%;
-        margin-left: 0.3rem;
-        padding-top: 8rem;
-        padding-bottom: 4rem
+        left: 45%;
+    }
+
+    .hamburger-menu {
+        width: 5rem;
+        height: 5rem;
+        left: 89%;
+    }
+
+    .hamburger-menu span {
+        width: 5rem;
+    }
+
+    .hamburger-menu.active .hamburger-menu_span-1 {
+        transform: translateY(1.5rem) rotate(45deg);
+        width: 4rem;
+        background-color: #ffffff;
+    }
+
+    .hamburger-menu.active .hamburger-menu_span-3 {
+        transform: translateY(-1.5rem) rotate(-45deg);
+        width: 4rem;
+        background-color: #ffffff;
+    }
+
+    .hamburger-menu_span-2 {
+        margin-top: 1.5rem;
+    }
+
+    .hamburger-menu_span-3 {
+        margin-top: 3rem;
     }
 
     .promo__header_wrapper {
@@ -2452,23 +2542,6 @@ li.slick-active button {
     .promo__header_logo {
         width: 22.6rem;
         height: 4.3rem
-    }
-
-    .hamburger-menu {
-        width: 3rem;
-        left: 93%
-    }
-
-    .hamburger-menu span {
-        width: 3rem
-    }
-
-    .hamburger-menu_span-3 {
-        margin-top: 2rem;
-    }
-
-    .hamburger-menu.active .hamburger-menu_span-3 {
-        transform: translateY(-0.8rem) rotate(-60deg)
     }
 
     .slider {
@@ -2526,8 +2599,8 @@ li.slick-active button {
 
     .bulletin-price_right-card {
         justify-content: space-between;
-        width: 29rem;
-        max-width: 29rem;
+        width: 40rem;
+        max-width: 40rem;
         min-width: 29rem;
         height: 34rem;
         margin-top: 0;
@@ -2542,8 +2615,8 @@ li.slick-active button {
     }
 
     .bulletin-price_right-card_item_descr, .bulletin-price_right-card_item_key {
-        width: 29rem;
-        font-size: 1.2rem
+        width: 40rem;
+        font-size: 1.4rem
     }
 
     .bulletin-price_right-card_bottom-links {
@@ -2585,7 +2658,7 @@ li.slick-active button {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 29rem;
+        width: 35rem;
         height: 14rem;
         padding: 1.5rem
     }
@@ -2606,7 +2679,7 @@ li.slick-active button {
         text-align: left;
         width: 15rem;
         top: 45%;
-        left: 42%
+        left: 52%
     }
 
     .products__link a {
@@ -2745,14 +2818,14 @@ li.slick-active button {
     }
 
     .footer {
-        height: 85rem
+        height: 90rem
     }
 
     .footer__wrapper {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 82rem;
+        height: 85rem;
         margin-top: 0
     }
 
@@ -2774,7 +2847,7 @@ li.slick-active button {
 
     .footer__contacts {
         width: 29rem;
-        top: 50rem;
+        top: 56rem;
         left: 5%
     }
 
@@ -2797,7 +2870,7 @@ li.slick-active button {
         top: 0;
         left: 0;
         width: 29rem;
-        height: 40rem;
+        height: 60rem;
         margin: 0
     }
 
@@ -2805,7 +2878,7 @@ li.slick-active button {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        height: 6rem
+        height: 8rem;
     }
 
     .footer__adds a {
@@ -2816,14 +2889,15 @@ li.slick-active button {
     .footer__adds:not(:last-child) {
         margin-bottom: 2rem
     }
+}
 
-    .footer__adds img {
-        width: 2rem;
-        height: 2rem
+@media screen and (max-width: 320px) {
+    .promo__top-header, .promo__header_wrapper, .products__descr {
+        padding: 0 1rem;
     }
 
-    .footer__adds:nth-child(3) img {
-        width: 1rem
+    .hamburger-menu {
+        left: 87%;
     }
 }
 
