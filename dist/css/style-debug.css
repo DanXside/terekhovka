@@ -771,12 +771,6 @@ body {
     max-height: 40rem
 }
 
-@media (min-width: 1930px)and (max-width: 2560px) {
-    .first-group__location_descr, .first-group__products_descr, .first-group__work_descr {
-        max-width: 93rem
-    }
-}
-
 @media screen and (max-width: 1000px) {
     .first-group__location_descr, .first-group__products_descr, .first-group__work_descr {
         max-width: 37rem;
@@ -822,12 +816,6 @@ body {
     max-width: 71rem;
     max-height: 40rem;
     margin-bottom: 8rem
-}
-
-@media (min-width: 1930px)and (max-width: 2560px) {
-    .first-group__andezit_descr, .first-group__certificate_descr {
-        max-width: 93rem
-    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1068,12 +1056,6 @@ li.slick-active button {
 .pre-footer__geografy_descr {
     display: flex;
     align-items: center;
-}
-
-@media (min-width: 1930px)and (max-width: 2560px) {
-    .pre-footer__geografy_descr {
-        max-width: 93rem
-    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -2845,22 +2827,38 @@ li.slick-active button {
     }
 }
 
-@media (min-width: 1930px) and (max-width: 2560px) {
-
-    .first-group__andezit_descr-title {
-        padding-right: 28rem
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+    .first-group__location_slide img, .first-group__andezit_slide img, .first-group__work_slide img, .first-group__products_slide img, .first-group__certificate_slide img, .pre-footer__geografy img {
+        width: 128.571rem;
+        height: 80.714rem;
     }
 
-    .overlay-2-slider, .overlay-3-slider, .overlay-4-slider, .overlay-5-slider, .overlay-slider {
-        margin-top: 20rem
+    .first-group__location_slider, .first-group__andezit_slider, .first-group__work_slider, .first-group__products_slider, .first-group__certificate_slider, .pre-footer__geografy {
+        max-width: 128.571rem;
+        max-height: 80.714rem;
     }
 
-    .pre-footer__slide {
-        width: 26.9rem
+    .first-group__location, .first-group__andezit, .first-group__work, .first-group__products, .first-group__certificate, .pre-footer__geografy {
+       height: 80.714rem;
     }
 
-    .pre-footer__slide img {
-        width: 26.9rem
+    .pre-footer__geografy {
+        max-width: 274.286rem;
+        max-height: 80.714rem;
+        margin-right: 0;
+    }
+
+    .pre-footer__geografy_descr-block img {
+        width: 19.857rem;
+        height: 24.714rem;
+    }
+
+    .overlay-slider {
+        margin-top: 45rem;
+    }
+
+    .overlay .slick-dots {
+        top: 120%
     }
 }
 
