@@ -762,18 +762,6 @@ body {
     max-height: 55.5rem
 }
 
-@media screen and (max-width: 576px) {
-    .first-group__location_slider, .first-group__products_slider, .first-group__work_slider {
-        max-width: 52rem;
-        height: 25rem
-    }
-
-    .first-group__location_slider img, .first-group__products_slider img, .first-group__work_slider img {
-        max-width: 52rem;
-        height: 25rem
-    }
-}
-
 @media screen and (max-width: 400px) {
     .first-group__location_slider, .first-group__products_slider, .first-group__work_slider {
         max-width: 29rem;
@@ -805,12 +793,6 @@ body {
     .first-group__location_descr, .first-group__products_descr, .first-group__work_descr {
         max-width: 37rem;
         max-height: 26rem
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .first-group__location_descr, .first-group__products_descr, .first-group__work_descr {
-        max-width: 52rem
     }
 }
 
@@ -885,12 +867,6 @@ body {
     }
 }
 
-@media screen and (max-width: 576px) {
-    .first-group__andezit_descr, .first-group__certificate_descr {
-        max-width: 52rem
-    }
-}
-
 @media screen and (max-width: 400px) {
     .first-group__andezit_descr, .first-group__certificate_descr {
         max-width: 29rem
@@ -936,18 +912,6 @@ body {
 .first-group__andezit_slider, .first-group__certificate_slider {
     max-width: 93rem;
     max-height: 55.5rem
-}
-
-@media screen and (max-width: 576px) {
-    .first-group__andezit_slider, .first-group__certificate_slider {
-        max-width: 52rem;
-        height: 25rem
-    }
-
-    .first-group__andezit_slider img, .first-group__certificate_slider img {
-        max-width: 52rem;
-        height: 25rem
-    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1176,12 +1140,6 @@ li.slick-active button {
     .pre-footer__geografy_descr {
         max-width: 37rem;
         max-height: 26rem
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .pre-footer__geografy_descr {
-        max-width: 52rem
     }
 }
 
@@ -3392,15 +3350,16 @@ li.slick-active button {
 
 @media screen and (max-width: 576px) {
     .first-group .container {
-        max-width: 52rem
+        max-width: 57.143rem
     }
 
-    .first-group .overlay-2-slider, .first-group .overlay-3-slider, .first-group .overlay-4-slider, .first-group .overlay-5-slider, .first-group .overlay-slider {
-        max-width: 100%
+    .first-group__location_slide img, .first-group__andezit_slide img, .first-group__work_slide img, .first-group__products_slide img, .first-group__certificate_slide img, .pre-footer__geografy img {
+        width: 57.143rem;
+        height: 30.714rem;
     }
 
-    .first-group .overlay-2-slider img, .first-group .overlay-3-slider img, .first-group .overlay-4-slider img, .first-group .overlay-5-slider img, .first-group .overlay-slider img {
-        max-width: 100%
+    .first-group__location_descr, .first-group__andezit_descr, .first-group__work_descr, .first-group__products_descr, .first-group__certificate_descr, .pre-footer__geografy_descr {
+        max-width: 57.143rem;
     }
 
     .first-group .overlay .slick-prev, .first-group .overlay-2 .slick-prev, .first-group .overlay-3 .slick-prev, .first-group .overlay-4 .slick-prev, .first-group .overlay-5 .slick-prev {
@@ -3413,8 +3372,14 @@ li.slick-active button {
         z-index: 20
     }
 
+    .not-block {
+        height: 23rem;
+        padding: 3rem 13rem;
+        align-items: start;
+    }
+
     .not-block__descr {
-        max-width: 33rem
+        max-width: 35rem
     }
 
     .not-block__images img:nth-child(2) {
@@ -3422,7 +3387,9 @@ li.slick-active button {
     }
 
     .banner__wrap {
-        height: 15.7rem
+        max-width: 57.143rem;
+        height: 15.7rem;
+        margin-top: 4rem;
     }
 
     .banner__descr {
@@ -3440,25 +3407,66 @@ li.slick-active button {
     }
 
     .pre-footer__video {
-        max-width: 52rem;
-        height: 25rem
+        max-width: 57.143rem;
+        height: 25rem;
+        margin-bottom: 8rem;
+    }
+
+    .pre-footer__geografy {
+        max-width: 57.143rem;
+        margin: 0 auto;
+        margin-top: 4rem;
     }
 
     .pre-footer__slider {
-        max-width: 48rem;
-        margin-left: 5.5rem
+        max-width: 51.143rem;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+        padding-right: 3rem;
     }
 
     .pre-footer__slide {
-        width: 14.1rem
+        width: 14.1rem;
     }
 
     .pre-footer__slide img {
         width: 14.1rem
     }
 
+    .pre-footer__slide:before {
+        background-size: 3rem 3rem;
+        background-repeat: no-repeat;
+        width: 3rem;
+        height: 3rem;
+        left: 43%;
+    }
+
     .pre-footer .slick-next {
-        right: -1rem
+        right: -1rem;
+        top: 41%;
+    }
+
+    .pre-footer .slick-prev {
+        top: 41%;
+    }
+
+    .overlay-slider {
+        width: 57.143rem;
+        height: 32.714rem;
+        margin-top: 45rem;
+    }
+
+    .overlay-slider img {
+        height: 32.714rem
+    }
+
+    .overlay .slick-prev {
+        top: 50%;
+    }
+
+    .overlay .slick-next {
+        top: 50%;
+        right: -5rem;
     }
 }
 
