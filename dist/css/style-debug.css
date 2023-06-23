@@ -119,12 +119,12 @@ body {
 
 .slider_item {
     width: 192rem;
-    height: 70rem
+    height: 70rem;
 }
 
 .slider_item img {
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .slider_text {
