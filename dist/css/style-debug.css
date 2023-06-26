@@ -1684,6 +1684,11 @@ li.slick-active button {
         padding: 2.7rem 0 2.7rem 0
     }
 
+    .promo__header_menu {
+        width: 70rem;
+        padding-left: 0;
+    }
+
     .promo__header_wrapper {
         max-width: 100rem
     }
