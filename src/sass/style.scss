@@ -1,41 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
-
-@import 'basic/variables';
 @import 'basic/mixins';
-
-* {
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
-html {
-    font-size: 16px;
-}
-
-body {
-    margin: 0;
-}
-
-.container {
-    max-width: 1720px;
-    margin: 0 auto;
-}
-
-@import 'blocks/main/promo';
-@import 'blocks/main/products';
-@import 'blocks/main/about-product';
-@import 'blocks/main/request_form';
-@import 'blocks/main/news';
-@import 'blocks/main/footer';
-
-@import 'blocks/about/first-group-block';
-@import 'blocks/about/not-block';
-@import 'blocks/about/banner';
-@import 'blocks/about/pre-footer';
+@import 'basic/variables';
 
 
+@import 'blocks/factory';
 
 
-@import 'basic/media/main-media';
-@import 'basic/media/about-media';
+@import 'basic/media/factory';
