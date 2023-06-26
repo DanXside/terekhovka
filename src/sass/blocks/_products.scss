@@ -1,0 +1,100 @@
+.products-list {
+    &__promo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8.57rem;
+        p {
+            font-weight: 400;
+            font-size: 2.57143rem;
+            line-height: 139%;
+            width: 100rem;
+            color: #000000;
+        }
+        &-tools {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 92.143rem;
+            button {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 42.85714rem;
+                height: 9.42857rem;
+                font-weight: 600;
+                font-size: 2rem;
+                line-height: 142.5%;
+                color: #ffffff;
+                text-transform: uppercase;
+                border-radius: 47px;
+                border: none;
+                cursor: pointer;
+                background: #952117;
+                transition: 0.5s all;
+                img {
+                    width: 4.286rem;
+                    height: 4.286rem;
+                }
+                &:hover {
+                    background: #4B5760;
+                }
+            }
+        }
+        &_btn-calc {
+            padding-left: 3rem;
+            span {
+                width: 30rem;
+                text-align: left;
+            }
+        }
+    }
+
+    &__positions {
+        margin-top: 6.14rem;
+        margin-bottom: 6.14rem;
+        &_wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(40rem, 46.42857rem));
+            grid-auto-rows: minmax(60rem, 67.14286rem);
+            gap: 4.71rem;
+            max-width: 200rem;
+        }
+        &_item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5.71429rem 2.85714rem 4.28571rem 2.85714rem;
+            border: 1px solid #666F7C;
+            transition: 0.3s all;
+            img {
+                width: 34.28571rem;
+                height: 34.28571rem;
+            }
+            a {
+                font-weight: 700;
+                font-size: 3.14286rem;
+                line-height: 128.5%;
+                text-transform: uppercase;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                color: #000000;
+            }
+            &-descr {
+                font-size: 2.57143rem;
+                font-family: Montserrat;
+                font-weight: 400;
+                line-height: 139%;
+                text-align: center;
+                color: #000000;
+            }
+            &:hover {
+                border: 0.1rem solid #9e161a;
+                border-radius: 1rem
+            }
+        }
+        
+    }
+}
