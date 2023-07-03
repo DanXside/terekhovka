@@ -1,0 +1,35 @@
+@media screen and (max-width: 1600px) {
+    .news {
+        min-height: 160rem;
+        &__wrapper {
+            min-height: 130rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .news {
+        min-height: 230rem;
+        &__wrapper {
+            min-height: 200rem;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .news {
+        min-height: 500rem;
+        &__wrapper {
+            min-height: 470rem;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .news {
+        min-height: 290rem;
+        &__wrapper {
+            min-height: 260rem;
+        }
+    }
+}

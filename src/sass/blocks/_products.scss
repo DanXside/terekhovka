@@ -98,3 +98,20 @@
         
     }
 }
+
+.calc {
+    display: none;
+    position: fixed;
+    width: 200rem;
+    height: 100vh;
+    top: 0%;
+    background-color: #666F7C;
+    border: 2rem solid #4B5760;
+    z-index: 100;
+    &-title {
+        font-weight: 700;
+        font-size: 3rem;
+        color: black;
+        text-align: center;
+    }
+}
