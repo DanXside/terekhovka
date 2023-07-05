@@ -114,9 +114,18 @@ $(document).ready(function(){
         return /\+7\(\d{3}\)\d{3}-\d{2}-\d{2}/g.test(value);
     });
 
-    const form = $('.request__form');
+    const formReq = $('.request__form');
 
-    form.validate();
+    formReq.validate();
+
+    $('.order__form_phone').inputmask("+7(999)999-99-99");
+    jQuery.validator.addMethod("checkMaskPhone", function (value, el) {
+        return /\+7\(\d{3}\)\d{3}-\d{2}-\d{2}/g.test(value);
+    });
+
+    const formOrd = $('.order__form');
+
+    formOrd.validate();
 
     $.validator.addClassRules({
         'request__form_phone': {
@@ -124,9 +133,17 @@ $(document).ready(function(){
         }
     });
 
-    form.submit(function(e) {
+    formReq.submit(function(e) {
         e.preventDefault();
-        if (form.valid()) {
+        if (formReq.valid()) {
+            alert('Форма отправлена');
+        };
+        return;
+    });
+
+    formOrd.submit(function(e) {
+        e.preventDefault();
+        if (formOrd.valid()) {
             alert('Форма отправлена');
         };
         return;
