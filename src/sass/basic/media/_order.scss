@@ -1,0 +1,32 @@
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+    .order {
+        &__form {
+            width: 120rem;
+            textarea {
+                width: 120rem;
+            }
+            input.order__form_btn {
+                width: 40rem;
+                height: 10rem;
+                font-size: 2.2rem;
+            }
+        }
+        &__delivery_descr, &__saving_descr {
+            width: 250rem;
+        }
+        &__office_map-1, &__office_map-2 {
+            img {
+                width: 140rem;
+                height: 80rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .order {
+        &__delivery_descr, &__saving_descr {
+            width: 120rem;
+        }
+    }
+}

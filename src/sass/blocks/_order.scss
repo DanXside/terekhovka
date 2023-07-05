@@ -25,6 +25,13 @@
             @include product-buttons;
         }
     }
+    &__button-calc {
+        padding-left: 4rem;
+    }
+    &__button-calc span {
+        width: 28rem;
+        text-align: left;
+    }
     &__postscribe {
         color: #000;
         text-align: center;
