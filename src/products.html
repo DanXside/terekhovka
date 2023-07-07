@@ -140,7 +140,40 @@
                     <input id="calc-windowHeight" name="windowHeight" value="1">
                 </div>
                 <h3>3. КЛАДКА</h3>
-                
+                <div class="calc-wrap">
+                    <div id="calc-brick-photo"></div>
+                    <div class="calc-brick">
+                        <span>Вид кладки</span>
+                        <select name="brick" id="calc-brick">
+                            <option data-photo="img/products/block-1.png" value="390/250/188">Блок стеновой андезитобазальтовый М50 </option>
+                            <option data-photo="img/products/block-1.png" value="390/190/188">Блок стеновой андезитобазальтовый М75 </option>
+                            <option data-photo="img/products/block-1.png" value="390/190/188">Блок стеновой андезитобазальтовый М100 </option>
+                            <option data-photo="img/products/block-3.png" value="390/90/188">Блок перегородочный андезитобазальтовый M35 </option>
+                            <option data-photo="img/products/block-4.png" value="390/120/188">Блок перегородочный андезитобазальтовый M50 390*120*188 мм </option>
+                            <option data-photo="img/products/block-5.png" value="390/150/188">Блок перегородочный андезитобазальтовый M50 390*150*188 мм </option>
+                            <option data-photo="img/products/block-6.png" value="390/288/188">Блок стеновой рядовой с пенополистирольным вкладышем </option>
+                            <option data-photo="img/products/block-7.png" value="190/288/188">Блок стеновой половинчатый с пенополистирольным вкладышем </option>
+                            <option data-photo="img/products/block-8.png" value="495/288/188">Блок стеновой угловой андезитобазальтовый </option>
+                            <option data-photo="img/products/block-11.png" value="390/190/188">Евроблок стеновой андезитобазальтовый </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calc-brickworkWidth">
+                    <span>Толщина кладки (м)</span>
+                    <select id="calc-brickworkWidth" name="brickworkWidth">
+                        <option value="0.24">0.24</option>
+                        <option value="0.4">0.4</option>
+                        <option value="0.6">0.6</option>
+                    </select>
+                </div>
+                <div class="calc-semiWidth">
+                    <span>Толщина шва (раствора) (м)</span>
+                    <input id="calc-semiWidth" name="semiwidth" value="0.01">
+                </div>
+                <button id="calc-sb">Рассчитать</button>
+                <div class="calc-output">
+                    <span>Количество материала:</span>
+                </div>
             </div>
 
             <div class="products-list__positions">
