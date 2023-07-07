@@ -93,9 +93,56 @@
                     <button class="products-list__promo_btn-download"><img src="icons/footer/download.svg" alt="download"><span>Скачать прайс-лист</span></button>
                 </div>
             </div>
+
             <div class="calc">
-                <h2 class="calc-title">Калькулятор расчета количества блоков</h2>
+                <div class="calc-title">
+                    <h2>Калькулятор расчета количества блоков</h2>
+                    <img id="calc-pic" src="icons/close.svg" alt="close">
+                </div>
+                <h3>1. РАЗМЕРЫ ЖИЛОГО ДОМА</h3>
+                <div class="calc-perimeter">
+                    <span>Периметр (м)</span>
+                    <input id="calc-perimeter" name="perimeter" value="20">
+                </div>
+                <div class="calc-height">
+                    <span>Высота (м)</span>
+                    <input id="calc-height" name="height" value="5">
+                </div>
+                <h3>2. АРХИТЕКТУРНЫЕ ОСОБЕННОСТИ </h3>
+                <div class="calc-descr">
+                    Если размеры дверей разные, то в поле <strong>"Количество внешних дверей (шт)"</strong> введите "<strong>1</strong>",  в поле <strong>"Ширина одной двери (м)"</strong> — сумму длин всех дверей, в поле <strong>"Высота одной двери (м)"</strong> — сумму высот всех дверей
+                </div>
+                <div class="calc-doorsQuantity">
+                    <span>Количество внешних дверей (шт)</span>
+                    <input id="calc-doorsQuantity" name="calc-doorsQuantity" value="1">
+                </div>
+                <div class="calc-doorsWidth">
+                    <span>Ширина одной двери (м)</span>
+                    <input id="calc-doorsWidth" name="doorsWidth" value="1">
+                </div>
+                <div class="calc-doorsHeight">
+                    <span>Высота одной двери (м)</span>
+                    <input id="calc-doorsHeight" name="doorsHeight" value="2">
+                </div>
+                <div class="calc-descr">
+                    Если размеры окон разные, то в поле <strong>"Количество окон (шт)"</strong> введите "<strong>1</strong>",  в поле <strong>"Ширина одного окна (м)"</strong> — сумму длин всех окон, в поле <strong>"Высота одного окна (м)"</strong> — сумму высот всех окон
+                </div>
+                <div class="calc-windowQuantity">
+                    <span>Количество окон (шт)</span>
+                    <input id="calc-windowQuantity" name="calc-windowQuantity" value="1">
+                </div>
+                <div class="calc-windowWidth">
+                    <span>Ширина одного окна (м)</span>
+                    <input id="calc-windowWidth" name="windowWidth" value="1">
+                </div>
+                <div class="calc-windowHeight">
+                    <span>Высота одного окна (м)</span>
+                    <input id="calc-windowHeight" name="windowHeight" value="1">
+                </div>
+                <h3>3. КЛАДКА</h3>
+                
             </div>
+
             <div class="products-list__positions">
                 <div class="products-list__positions_wrapper">
                     <div class="products-list__positions_item">

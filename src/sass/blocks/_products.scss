@@ -105,13 +105,95 @@
     width: 200rem;
     height: 100vh;
     top: 0%;
-    background-color: #666F7C;
-    border: 2rem solid #4B5760;
+    background-color: #ffffff;
+    border: 1.2rem solid #4B5760;
     z-index: 100;
-    &-title {
-        font-weight: 700;
-        font-size: 3rem;
-        color: black;
+    h2 {
+        color: #ffffff;
         text-align: center;
+        font-size: 3.57143rem;
+        font-weight: 700;
+        line-height: 128.5%;
+        text-transform: uppercase;
+    }
+    h3 {
+        color: #000;
+        text-align: center;
+        font-size: 2.57143rem;
+        font-weight: 700;
+        line-height: 114%;
+    }
+    &-title {
+        position: relative;
+        width: 100%;
+        height: 12.571rem;
+        background: url(../img/backgrounds/dark-texture.jpg) center center/cover no-repeat;
+        padding-top: 1rem;
+        img {
+            position: absolute;
+            top: 10%;
+            right: 1%;
+            cursor: pointer;
+        }
+    }
+    &-perimeter, &-height {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 5.71429rem;
+        background: rgba(102, 111, 124, 0.13);
+        span {
+            color: #30383E;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 140%;
+            text-transform: uppercase;
+            width: 20.14286rem;
+        }
+    }
+    &-height {
+        margin-top: 1rem;
+    }
+    #calc-perimeter, #calc-height, #calc-doorsQuantity, #calc-doorsWidth,
+    #calc-doorsHeight, #calc-windowQuantity, #calc-windowWidth, #calc-windowHeight {
+        width: 28.57143rem;
+        height: 4.28571rem;
+        background: #30383E;
+        border: none;
+        padding: 0 2rem 0 2rem;
+        margin-left: 2rem;
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    &-descr {
+        color: #000;
+        text-align: center;
+        font-size: 1.71429rem;
+        font-weight: 400;
+        line-height: 140%;
+        width: 120rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    &-doorsQuantity, &-doorsWidth, &-doorsHeight, 
+    &-windowQuantity, &-windowWidth, &-windowHeight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 5.71429rem;
+        background: rgba(102, 111, 124, 0.13);
+        margin-top: 1rem;
+        span {
+            color: #30383E;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 140%;
+            text-transform: uppercase;
+            width: 42rem;
+        }
     }
 }
