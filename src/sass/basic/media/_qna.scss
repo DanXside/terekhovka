@@ -1,0 +1,43 @@
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+    .qna {
+        &__left-wrap, &__right-wrap {
+            img {
+                width: 87.42857rem;
+                height: 51.14286rem;
+            }
+        }
+        &__descr {
+            width: 170rem;
+            h2 {
+                font-size: 4.2rem;
+            }
+            p {
+                font-size: 3.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .qna {
+        &__left-wrap, &__right-wrap {
+            img {
+                width: 27.42857rem;
+                height: 21.14286rem;
+            }
+        }
+        &__descr {
+            width: 100rem;
+            h2 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+    .order__divider {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+}

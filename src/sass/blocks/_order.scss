@@ -130,10 +130,10 @@
         display: flex;
         flex-direction: column;
         width: 84.28571rem;
-        height: 50rem;
+        height: 60rem;
         margin: 0 auto;
         margin-top: 6rem;
-        &_name, &_phone {
+        &_name, &_phone, &_email {
             width: 100%;
             height: 7.42857rem;
             padding: 1.3rem 3.3rem;
@@ -145,9 +145,12 @@
             color: #000000;
             transition: .3s all
         }
-        &_name:focus, &_phone:focus, &_text-area:focus {
+        &_name:focus, &_phone:focus, &_text-area:focus, &_email:focus {
             outline: 0;
             border-radius: 0.8rem
+        }
+        &_email {
+            margin-top: 2rem;
         }
         &_phone {
             margin-top: 2rem;
