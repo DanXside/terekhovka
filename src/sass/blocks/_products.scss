@@ -205,13 +205,12 @@
         align-items: center;
         width: 100%;
         height: 15.71429rem;
-        padding: 0 18.28rem 0 18.28rem;
+        padding: 0 30.28rem 0 62.28rem;
         background: rgba(102, 111, 124, 0.13);
     }
-    &-brick-photo {
+    #calc-brick-photo {
         width: 14.72529rem;
         height: 14.28571rem;
-        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -263,13 +262,12 @@
     #calc-sb:hover {
         background:#4b5760;
     }
-    &-output {
+    #calc-output {
         position: absolute;
-        display: flex;
+        display: none;
         align-items: center;
-        visibility: hidden;
-        top: 95%;
-        right: 20%;
+        top: 93%;
+        right: 10%;
         span {
             color: #000;
             text-align: center;
@@ -285,6 +283,7 @@
             font-weight: 700;
             line-height: 114%;
             text-transform: uppercase;
+            margin-left: 1rem;
         }
     }
 }
