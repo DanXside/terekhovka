@@ -11,7 +11,7 @@ $(document).ready(function () {
         let index = $('#calc-brick')[0].selectedIndex;
         photo = $('#calc-brick option').eq(index).data('photo');
         console.log(photo);
-        $('#calc-brick-photo').css('backgroundImage', 'url(../'+ photo +')');
+        $('#calc-brick-photo').css('backgroundImage', 'url('+ photo +')');
     });
     $('#calc-brick').change();
 
