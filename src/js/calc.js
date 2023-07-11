@@ -3,17 +3,24 @@ $(document).ready(function () {
         $('.calc').fadeIn(300);
     });
 
-    $('#calc-pic').click(function() {
+    $('#calc-pic').click(function(e) {
         $('.calc').fadeOut(300);
+        $('#calc-output').fadeOut();
     });
 
     $('#calc-brick').change(function() {
         let index = $('#calc-brick')[0].selectedIndex;
         photo = $('#calc-brick option').eq(index).data('photo');
-        console.log(photo);
         $('#calc-brick-photo').css('backgroundImage', 'url('+ photo +')');
     });
     $('#calc-brick').change();
+
+    if ($(location).attr('pathname') === '/calc.html' ) {
+        $('.calc').css('display', 'block');
+        $('.calc').css('position', 'relative');
+        $('.calc').css('border', 'none');
+        $('.calc-title').css('display', 'none');
+    };
 
     $('#calc-sb').click(function (e) {
         e.preventDefault();

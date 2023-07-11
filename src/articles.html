@@ -14,8 +14,9 @@
     <script defer type="text/javascript" src="js/slick.min.js"></script>
     <script defer type="text/javascript" src="js/jquery.inputmask.min.js"></script>
     <script defer type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script defer type="text/javascript" src="js/calc.js"></script> 
     <script defer type="text/javascript" src="js/index.js"></script>   
-    <title>Новости</title>
+    <title>Читать о блоках</title>
 </head>
 <body>
 
@@ -46,7 +47,7 @@
                             <a href="about.html">о заводе</a>
                         </li>
                         <li class="promo__header_menu-link">
-                            <a href="#">новости</a>
+                            <a href="news.html">новости</a>
                         </li>
                         <li class="promo__header_menu-link">
                             <a href="products.html">продукция</a>
@@ -55,7 +56,7 @@
                             <a href="factory.html">производство</a>
                         </li>
                         <li class="promo__header_menu-link">
-                            <a href="#">объекты</a>
+                            <a href="objects.html">объекты</a>
                         </li>
                         <li class="promo__header_menu-link">
                             <a href="order.html">заказ и доставка</a>
@@ -77,76 +78,48 @@
         </header>
     </section>
 
-    <section class="news">
-        <div class="news__main-title">
-            <h2>новости</h2>
-        </div>
+    <div class="first-group__main-title">
+        <h1>Читать о блоках</h1>
+    </div>
+
+    <section class="articles">
         <div class="container">
-            <div class="news__wrapper">
-                <div class="news__item">
+            <div class="articles__wrap">
+                <div class="articles__item">
+                    <img src="img/articles/main-page/article-1.jpg" alt="article">
                     <a href="#">
-                        <img src="img/news/cat.jpg" alt="кошка">
+                        Последствия использования некачественных стеновых блоков
                     </a>
-                    <a href="#" class="news__item_title">
-                        Опека для дикой кошки                    </a>
-                    <div class="news__item_descr">
-                        Тереховский завод стал опекуном пумы по имени Румайса в парке “Белый лев”                    </div>
-                    <span class="news__item_date">27 февраля 2014 г.</span>
                 </div>
-                <div class="news__item">
+                <div class="articles__item">
+                    <img src="img/articles/main-page/article-2.jpg" alt="article">
                     <a href="#">
-                        <img src="img/news/pogruzka 1 (2).jpg" alt="погрузка">
+                        Основные узлы наружных несущих стен из блоков с вкладышем
                     </a>
-                    <a href="#" class="news__item_title">
-                        22 года на строительном рынке Дальнего Востока                    </a>
-                    <div class="news__item_descr">
-                        Нам нужно больше. Производство андезитобозазальтовых блоков растет на 15% в год                    </div>
-                    <span class="news__item_date">27 февраля 2014 г.</span>
                 </div>
-                <div class="news__item">
+                <div class="articles__item">
+                    <img src="img/articles/main-page/article-3.jpg" alt="article">
                     <a href="#">
-                        <img src="img/news/house.jpg" alt="дом">
+                        Укладка тротуарной плитки — 10 простых этапов
                     </a>
-                    <a href="#" class="news__item_title">
-                        Из чего построен ваш дом                    </a>
-                    <div class="news__item_descr">
-                        На что стоит обратить внимание перед покупкой квартиры в новостройке? Отвечает эксперт                    </div>
-                    <span class="news__item_date">27 февраля 2014 г.</span>
                 </div>
-                <div class="news__item">
+                <div class="articles__item">
+                    <img src="img/articles/main-page/article-4.jpg" alt="article">
                     <a href="#">
-                        <img src="img/news/cat.jpg" alt="кошка">
+                        Техническое решение наружной самонесущей стены каркасных зданий для блока с пенополистирольным вкладышем
                     </a>
-                    <a href="#" class="news__item_title">
-                        Опека для дикой кошки                    </a>
-                    <div class="news__item_descr">
-                        Тереховский завод стал опекуном пумы по имени Румайса в парке “Белый лев”                    </div>
-                    <span class="news__item_date">27 февраля 2014 г.</span>
                 </div>
-                <div class="news__item">
+                <div class="articles__item">
+                    <img src="img/articles/main-page/article-5.jpg" alt="article">
                     <a href="#">
-                        <img src="img/news/pogruzka 1 (2).jpg" alt="погрузка">
+                        Техническое решение наружной несущей стены для блока с пенополистирольным вкладышем
                     </a>
-                    <a href="#" class="news__item_title">
-                        22 года на строительном рынке Дальнего Востока                    </a>
-                    <div class="news__item_descr">
-                        Нам нужно больше. Производство андезитобозазальтовых блоков растет на 15% в год                    </div>
-                    <span class="news__item_date">27 февраля 2014 г.</span>
-                </div>
-                <div class="news__item">
-                    <a href="#">
-                        <img src="img/news/house.jpg" alt="дом">
-                    </a>
-                    <a href="#" class="news__item_title">
-                        Из чего построен ваш дом                    </a>
-                    <div class="news__item_descr">
-                        На что стоит обратить внимание перед покупкой квартиры в новостройке? Отвечает эксперт                    </div>
-                    <span class="news__item_date">27 февраля 2014 г.</span>
                 </div>
             </div>
-            <div class="news__mb"></div>
         </div>
     </section>
+
+
 
     <footer class="footer">
         <div class="container">
@@ -168,7 +141,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="news.html">
                                 Новости
                             </a>
                         </li>
@@ -183,7 +156,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="objects.html">
                                 Объекты
                             </a>
                         </li>
@@ -213,13 +186,13 @@
                     </div>
                     <div class="footer__adds">
                         <img src="icons/footer/calc.svg" alt="калькулятор">
-                        <a href="calc.html">
+                        <a href="#">
                             калькулятор расчёта количества блоков
                         </a>
                     </div>
                     <div class="footer__adds">
                         <img src="icons/footer/info.svg" alt="информация">
-                        <a href="articles.html">
+                        <a href="#">
                             читать о блоках
                         </a>
                     </div>

@@ -1,0 +1,20 @@
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+    .calc {
+        width: 274.286rem;
+        &-wrap {
+            padding: 0 70rem 0 90rem;
+        }
+        #calc-output {
+            right: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .calc {
+        width: 142.857rem;
+        &-wrap {
+            padding: 0 15rem 0 20rem;
+        }
+    }
+}

@@ -14,8 +14,9 @@
     <script defer type="text/javascript" src="js/slick.min.js"></script>
     <script defer type="text/javascript" src="js/jquery.inputmask.min.js"></script>
     <script defer type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script defer type="text/javascript" src="js/calc.js"></script> 
     <script defer type="text/javascript" src="js/index.js"></script>   
-    <title>Новости</title>
+    <title>Калькулятор</title>
 </head>
 <body>
 
@@ -46,7 +47,7 @@
                             <a href="about.html">о заводе</a>
                         </li>
                         <li class="promo__header_menu-link">
-                            <a href="#">новости</a>
+                            <a href="news.html">новости</a>
                         </li>
                         <li class="promo__header_menu-link">
                             <a href="products.html">продукция</a>
@@ -55,7 +56,7 @@
                             <a href="factory.html">производство</a>
                         </li>
                         <li class="promo__header_menu-link">
-                            <a href="#">объекты</a>
+                            <a href="objects.html">объекты</a>
                         </li>
                         <li class="promo__header_menu-link">
                             <a href="order.html">заказ и доставка</a>
@@ -77,76 +78,103 @@
         </header>
     </section>
 
-    <section class="news">
-        <div class="news__main-title">
-            <h2>новости</h2>
-        </div>
+    <div class="first-group__main-title">
+        <h1>Калькулятор для расчета количества блоков</h1>
+    </div>
+
+    <section class="section-calc">
         <div class="container">
-            <div class="news__wrapper">
-                <div class="news__item">
-                    <a href="#">
-                        <img src="img/news/cat.jpg" alt="кошка">
-                    </a>
-                    <a href="#" class="news__item_title">
-                        Опека для дикой кошки                    </a>
-                    <div class="news__item_descr">
-                        Тереховский завод стал опекуном пумы по имени Румайса в парке “Белый лев”                    </div>
-                    <span class="news__item_date">27 февраля 2014 г.</span>
+            <div class="calc">
+                <div class="calc-title">
+                    <h2>Калькулятор расчета количества блоков</h2>
+                    <img id="calc-pic" src="icons/close.svg" alt="close">
                 </div>
-                <div class="news__item">
-                    <a href="#">
-                        <img src="img/news/pogruzka 1 (2).jpg" alt="погрузка">
-                    </a>
-                    <a href="#" class="news__item_title">
-                        22 года на строительном рынке Дальнего Востока                    </a>
-                    <div class="news__item_descr">
-                        Нам нужно больше. Производство андезитобозазальтовых блоков растет на 15% в год                    </div>
-                    <span class="news__item_date">27 февраля 2014 г.</span>
+                <h3>1. РАЗМЕРЫ ЖИЛОГО ДОМА</h3>
+                <div class="calc-one-wrap">
+                    <div class="calc-perimeter">
+                        <span>Периметр (м)</span>
+                        <input id="calc-perimeter" name="perimeter" value="20">
+                    </div>
+                    <div class="calc-height">
+                        <span>Высота (м)</span>
+                        <input id="calc-height" name="height" value="5">
+                    </div>
                 </div>
-                <div class="news__item">
-                    <a href="#">
-                        <img src="img/news/house.jpg" alt="дом">
-                    </a>
-                    <a href="#" class="news__item_title">
-                        Из чего построен ваш дом                    </a>
-                    <div class="news__item_descr">
-                        На что стоит обратить внимание перед покупкой квартиры в новостройке? Отвечает эксперт                    </div>
-                    <span class="news__item_date">27 февраля 2014 г.</span>
+                <h3>2. АРХИТЕКТУРНЫЕ ОСОБЕННОСТИ </h3>
+                <div class="calc-descr">
+                    Если размеры дверей разные, то в поле <strong>"Количество внешних дверей (шт)"</strong> введите "<strong>1</strong>",  в поле <strong>"Ширина одной двери (м)"</strong> — сумму длин всех дверей, в поле <strong>"Высота одной двери (м)"</strong> — сумму высот всех дверей
                 </div>
-                <div class="news__item">
-                    <a href="#">
-                        <img src="img/news/cat.jpg" alt="кошка">
-                    </a>
-                    <a href="#" class="news__item_title">
-                        Опека для дикой кошки                    </a>
-                    <div class="news__item_descr">
-                        Тереховский завод стал опекуном пумы по имени Румайса в парке “Белый лев”                    </div>
-                    <span class="news__item_date">27 февраля 2014 г.</span>
+                <div class="calc-doorsQuantity">
+                    <span>Количество внешних дверей (шт)</span>
+                    <input id="calc-doorsQuantity" name="calc-doorsQuantity" value="1">
                 </div>
-                <div class="news__item">
-                    <a href="#">
-                        <img src="img/news/pogruzka 1 (2).jpg" alt="погрузка">
-                    </a>
-                    <a href="#" class="news__item_title">
-                        22 года на строительном рынке Дальнего Востока                    </a>
-                    <div class="news__item_descr">
-                        Нам нужно больше. Производство андезитобозазальтовых блоков растет на 15% в год                    </div>
-                    <span class="news__item_date">27 февраля 2014 г.</span>
+                <div class="calc-one-wrap">
+                    <div class="calc-doorsWidth">
+                        <span>Ширина одной двери (м)</span>
+                        <input id="calc-doorsWidth" name="doorsWidth" value="1">
+                    </div>
+                    <div class="calc-doorsHeight">
+                        <span>Высота одной двери (м)</span>
+                        <input id="calc-doorsHeight" name="doorsHeight" value="2">
+                    </div>
                 </div>
-                <div class="news__item">
-                    <a href="#">
-                        <img src="img/news/house.jpg" alt="дом">
-                    </a>
-                    <a href="#" class="news__item_title">
-                        Из чего построен ваш дом                    </a>
-                    <div class="news__item_descr">
-                        На что стоит обратить внимание перед покупкой квартиры в новостройке? Отвечает эксперт                    </div>
-                    <span class="news__item_date">27 февраля 2014 г.</span>
+                <div class="calc-descr">
+                    Если размеры окон разные, то в поле <strong>"Количество окон (шт)"</strong> введите "<strong>1</strong>",  в поле <strong>"Ширина одного окна (м)"</strong> — сумму длин всех окон, в поле <strong>"Высота одного окна (м)"</strong> — сумму высот всех окон
+                </div>
+                <div class="calc-one-wrap">
+                    <div class="calc-windowQuantity">
+                        <span>Количество окон (шт)</span>
+                        <input id="calc-windowQuantity" name="calc-windowQuantity" value="1">
+                    </div>
+                    <div class="calc-windowWidth">
+                        <span>Ширина одного окна (м)</span>
+                        <input id="calc-windowWidth" name="windowWidth" value="1">
+                    </div>
+                </div> 
+                <div class="calc-windowHeight">
+                    <span>Высота одного окна (м)</span>
+                    <input id="calc-windowHeight" name="windowHeight" value="1">
+                </div>
+                <h3>3. КЛАДКА</h3>
+                <div class="calc-wrap">
+                    <div id="calc-brick-photo"></div>
+                    <div class="calc-brick">
+                        <span>Вид кладки</span>
+                        <select name="brick" id="calc-brick">
+                            <option data-photo="img/products/block-1.png" value="390/250/188">Блок стеновой андезитобазальтовый М50 </option>
+                            <option data-photo="img/products/block-1.png" value="390/190/188">Блок стеновой андезитобазальтовый М75 </option>
+                            <option data-photo="img/products/block-1.png" value="390/190/188">Блок стеновой андезитобазальтовый М100 </option>
+                            <option data-photo="img/products/block-3.png" value="390/90/188">Блок перегородочный андезитобазальтовый M35 </option>
+                            <option data-photo="img/products/block-4.png" value="390/120/188">Блок перегородочный андезитобазальтовый M50 390*120*188 мм </option>
+                            <option data-photo="img/products/block-5.png" value="390/150/188">Блок перегородочный андезитобазальтовый M50 390*150*188 мм </option>
+                            <option data-photo="img/products/block-6.png" value="390/288/188">Блок стеновой рядовой с пенополистирольным вкладышем </option>
+                            <option data-photo="img/products/block-7.png" value="190/288/188">Блок стеновой половинчатый с пенополистирольным вкладышем </option>
+                            <option data-photo="img/products/block-8.png" value="495/288/188">Блок стеновой угловой андезитобазальтовый </option>
+                            <option data-photo="img/products/block-11.png" value="390/190/188">Евроблок стеновой андезитобазальтовый </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calc-one-wrap">
+                    <div class="calc-brickworkWidth">
+                        <span>Толщина кладки (м)</span>
+                        <select id="calc-brickworkWidth" name="brickworkWidth">
+                            <option value="0.24">0.24</option>
+                            <option value="0.4">0.4</option>
+                            <option value="0.6">0.6</option>
+                        </select>
+                    </div>
+                    <div class="calc-semiWidth">
+                        <span>Толщина шва (раствора) (м)</span>
+                        <input id="calc-semiWidth" name="semiWidth" value="0.01">
+                    </div>
+                </div>
+                <button id="calc-sb">Рассчитать</button>
+                <div id="calc-output">
                 </div>
             </div>
-            <div class="news__mb"></div>
         </div>
     </section>
+
 
     <footer class="footer">
         <div class="container">
@@ -168,7 +196,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="news.html">
                                 Новости
                             </a>
                         </li>
@@ -183,7 +211,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="objects.html">
                                 Объекты
                             </a>
                         </li>
@@ -213,13 +241,13 @@
                     </div>
                     <div class="footer__adds">
                         <img src="icons/footer/calc.svg" alt="калькулятор">
-                        <a href="calc.html">
+                        <a href="#">
                             калькулятор расчёта количества блоков
                         </a>
                     </div>
                     <div class="footer__adds">
                         <img src="icons/footer/info.svg" alt="информация">
-                        <a href="articles.html">
+                        <a href="#">
                             читать о блоках
                         </a>
                     </div>
