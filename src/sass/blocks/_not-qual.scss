@@ -1,0 +1,106 @@
+.not-qual {
+    h2 {
+        color: #30383E;
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 114%;
+        margin-bottom: 8rem;
+    }
+    h3 {
+        margin: 0;
+    }
+    h3.black {
+        color: #30383E;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 114%;
+    }
+    h3.red {
+        color: #9E161A;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 114%;
+    }
+    &__left-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    &__right-wrap {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    img {
+        width: 72.85714rem;
+        height: 50rem;
+    }
+    &__img-wrap {
+        display: flex;
+        flex-direction: column;
+        span {
+            width: 72.85714rem;
+            color: #4B5760;
+            font-size: 2rem;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 140%;
+            margin-top: 2rem;
+        }
+    }
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        width: 112.57143rem;
+    }
+    &__normal-fz {
+        color: #30383E;
+        font-size: 2.85714rem;
+        font-weight: 500;
+        line-height: 140%;
+    }
+    &__small-fz {
+        color: #30383E;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    &__red {
+        color: #9E161A;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 140%;
+    }
+    &__title-btm {
+        background: url(../img/about/backgrounds/red-texture.jpg) center center/cover no-repeat;
+        text-align: center;
+        height: 9.28571rem;
+        padding-top: 2.4rem;
+        color: #FFF;
+        text-align: center;
+        font-size: 3.42857rem;
+        font-weight: 700;
+        line-height: 138%;
+        text-transform: uppercase;
+    }
+    &__bottom {
+        background: url(../img/articles/no-quality-blocks/texture.jpg) center center/cover no-repeat;
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__bottom-p {
+        color: #FFF;
+        font-size: 2.28571rem;
+        font-weight: 600;
+        line-height: 138%;
+        width: 172rem;
+    }
+}
